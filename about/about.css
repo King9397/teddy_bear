@@ -6,7 +6,7 @@ header {
 }
 header h1 {
   color: #000;
-  font-family: var(--ko-font);
+  font-family: "Gyeonggi";
   font-size: 3.125rem;
   font-weight: bold;
   line-height: normal;
