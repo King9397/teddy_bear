@@ -14,6 +14,10 @@ body {
   display: grid;
 }
 
+span {
+  display: block;
+}
+
 /* h2 */
 .title1 {
   font-family: var(--en-font);
