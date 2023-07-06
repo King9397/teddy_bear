@@ -8,6 +8,19 @@ body {
   padding: 0;
 }
 
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+span {
+  display: block;
+}
+
+/* header */
 header {
   padding: 0 2%;
   justify-content: space-between;
@@ -25,18 +38,6 @@ header h1,
   font-weight: bold;
   line-height: normal;
   letter-spacing: -5px;
-}
-
-.flex {
-  display: flex;
-}
-
-.grid {
-  display: grid;
-}
-
-span {
-  display: block;
 }
 
 /* h2 */
@@ -63,7 +64,7 @@ span {
   text-align: center;
 }
 .deco::after {
-  content: "";
+  content: '';
   display: block;
   width: 2px;
   height: 48px;

@@ -2,3 +2,154 @@
 
 /* 변수 */
 @import url(../assets/style/variable.css);
+
+/*----- main -----*/
+
+/*--- title ---*/
+.info_wrapper {
+  margin: 8rem 0;
+}
+/*- title-img -*/
+.info_wrapper .info_wrapper_img {
+  height: 440px;
+  background: url(./images/titleChu.gif) no-repeat 50%;
+  margin-bottom: 10rem;
+}
+
+/*--- swiper ---*/
+.swiper_wrapper {
+  height: 100vh;
+  margin: 10rem 0;
+  /* overflow: hidden; */
+}
+.swiper_wrapper .swiper_wrapper_inner {
+}
+.swiper_wrapper .swiper_wrapper_inner .wrapper_inner_box {
+  background-color: var(--color-gray);
+  width: 100%;
+  flex-grow: 0;
+  justify-content: center;
+}
+.swiper_wrapper .swiper_wrapper_inner .wrapper_inner_box .swiper_wrapper_txt {
+}
+/*- swiper-txt -*/
+.swiper_wrapper .swiper_wrapper_inner .swiper_wrapper_txt {
+  flex-direction: column;
+  justify-content: center;
+}
+.swiper_wrapper .swiper_wrapper_inner .swiper_wrapper_txt .sm {
+  font-family: var(--ko-font);
+  font-size: var(--size-font20);
+  letter-spacing: -1px;
+}
+.swiper_wrapper .swiper_wrapper_inner .swiper_wrapper_txt .title2 {
+  text-align: left;
+  margin: 3rem 0 5rem 0;
+}
+.swiper_wrapper .swiper_wrapper_inner .swiper_wrapper_txt address {
+  font-family: var(--ko-font);
+  font-size: var(--size-font22);
+  font-style: normal;
+  letter-spacing: -1px;
+  margin-bottom: 1.1rem;
+}
+.mini1 {
+  font-family: var(--ko-font);
+  font-size: var(--size-font22);
+  margin: 3rem 0 1.1rem 9px;
+  position: relative;
+}
+.mini1::before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 30px;
+  background-color: var(--color-pink);
+  position: absolute;
+  top: -7px;
+  left: -9px;
+}
+.mini2 {
+  font-family: var(--ko-font);
+  font-size: var(--size-font22);
+}
+/*- swiper-img -*/
+.swiper_wrapper .swiper_wrapper_inner .swiper_wrapper_img1,
+.swiper_wrapper .swiper_wrapper_inner .swiper_wrapper_img2,
+.swiper_wrapper .swiper_wrapper_inner .swiper_wrapper_img3,
+.swiper_wrapper .swiper_wrapper_inner .swiper_wrapper_img4 {
+  width: 620px;
+  height: 786px;
+  background: var(--color-pink) url(./images/teddybear.jpg) no-repeat 100% / 96%
+    94%;
+}
+
+/*--- china Museum ---*/
+.china_wrapper {
+  padding: 0 2%;
+}
+.china_wrapper .china_wrapper_inner {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.china_wrapper .china_wrapper_inner .wrapper_inner_chengdu {
+  flex-direction: column;
+}
+/*- china Museum-img -*/
+.china_wrapper .china_wrapper_inner .wrapper_inner_chengdu .inner_chengdu_img1 {
+  width: 1207px;
+  height: 482px;
+  background: url(./images/teddybear.jpg) no-repeat 100% / cover;
+}
+.china_wrapper .china_wrapper_inner .wrapper_inner_chengdu .inner_chengdu_img2 {
+  width: 580px;
+  height: 482px;
+  background: url(./images/teddybear.jpg) no-repeat 100% / cover;
+}
+.china_wrapper .inner_chengdu_img3 {
+  width: 1827px;
+  height: 400px;
+  background: url(./images/teddybear.jpg) no-repeat 100% / cover;
+  margin: 8rem 0;
+}
+
+/*--- charge ---*/
+.charge_wrapper {
+  width: 1827px;
+  height: 642px;
+  background-color: var(--color-pink);
+  margin: 16rem auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.charge_wrapper .charge_wrapper_title {
+  font-family: var(--ko-font);
+  font-size: var(--size-font96);
+}
+.charge_wrapper .charge_wrapper_txt1 {
+  font-family: var(--ko-font);
+  font-size: var(--size-font30);
+  font-weight: bold;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  width: 62%;
+  text-align: center;
+  justify-content: center;
+}
+.charge_wrapper .charge_wrapper_txt1 li {
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.charge_wrapper .charge_wrapper_txt2 {
+  flex-direction: column;
+  list-style: disc;
+  font-family: var(--ko-font);
+  font-size: var(--size-font22);
+}
+.charge_wrapper .charge_wrapper_txt2 li {
+  padding: 2% 0;
+}
