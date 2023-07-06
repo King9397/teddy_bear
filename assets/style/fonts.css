@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Helvetica';
+  font-family: "Helvetica";
   src: url(../fonts/Helvetica-95-Black.woff);
   font-weight: normal;
   font-style: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'Batang';
+  font-family: "Batang";
   src: url(../fonts/Batang_Regular.woff);
   font-weight: normal;
   font-style: normal;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: 'Batang';
+  font-family: "Batang";
   src: url(../fonts/Batang_Bold.woff);
   font-weight: bold;
   font-style: normal;
