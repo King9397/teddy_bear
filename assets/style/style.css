@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/* 공통 스타일 */
+
+body {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+/* h2 */
+.title1 {
+  font-family: var(--en-font);
+  font-size: var(--size-font140);
+  line-height: var(--size-font140);
+  text-align: center;
+}
+
+/* h3 */
+.title2 {
+  font-family: var(--en-font);
+  font-size: var(--size-font96);
+  line-height: var(--size-font96);
+  text-align: center;
+}
+
+/* 데코네임 */
+.deco {
+  font-family: var(--ko-font);
+  font-size: var(--size-font24);
+  font-weight: normal;
+  text-align: center;
+}
+.deco::after {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 48px;
+  background-color: #000;
+}
+
+/* 버튼 */
+.btn {
+  background-color: var(--color-pink);
+  border-radius: 3.125rem;
+  width: 15.3125rem;
+  height: 6rem;
+  font-family: var(--ko-font);
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}

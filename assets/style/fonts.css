@@ -1,23 +1,23 @@
-@font-face{
-    font-family: "Helvetica-95-Black";
-    src: url(../fonts/Batang_Bold.woff);
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+@font-face {
+  font-family: 'Helvetica';
+  src: url(../fonts/Helvetica-95-Black.woff);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-@font-face{
-    font-family: "Batang_Regular";
-    src: url(../fonts/Batang_Bold.woff);
-    font-weight: normal;
-    font-style: Bold;
-    font-display: swap;
+@font-face {
+  font-family: 'Batang';
+  src: url(../fonts/Batang_Regular.woff);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-@font-face{
-    font-family: "Batang_Bold";
-    src: url(../fonts/Batang_Bold.woff);
-    font-weight: normal;
-    font-style: Bold;
-    font-display: swap;
+@font-face {
+  font-family: 'Batang';
+  src: url(../fonts/Batang_Bold.woff);
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
