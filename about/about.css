@@ -6,13 +6,13 @@
   text-align: center;
   padding-top: 210px;
 }
-.title_wrapper .title-wrapper_ani {
+.title_wrapper .title_wrapper_ani {
+  width: 720px;
+  height: 400px;
+  padding-top: 92px;
+  background: url(./images/hi.gif) no-repeat 50% / cover;
+  margin: 0 auto;
 }
 .title_wrapper .deco {
-  text-align: center;
-
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  padding-top: 21px;
 }

@@ -14,11 +14,12 @@ header {
   padding-top: 27px;
 }
 
-header .menu_wrapper {
+header .menu_wrapper_list {
   display: none;
 }
 
-header h1 {
+header h1,
+.menu_wrapper_nav {
   font-family: var(--ko-font);
   font-size: 3.125rem;
   font-weight: bold;
@@ -62,7 +63,7 @@ span {
   text-align: center;
 }
 .deco::after {
-  content: '';
+  content: "";
   display: block;
   width: 2px;
   height: 48px;
