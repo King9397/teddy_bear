@@ -11,14 +11,13 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../site.webmanifest">
 
     <!-- reset -->
     <link rel="stylesheet" href="../assets/style/reset.css">
     <!-- font -->
     <link rel="stylesheet" href="../assets/style/fonts.css">
     <!-- swiper css -->
-    <link rel="stylesheet" href="../common/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
     <!-- 공통 스타일 css -->
     <link rel="stylesheet" href="../assets/style/style.css">
     <!-- info 디자인 css -->
@@ -27,7 +26,7 @@
     <!-- script -->
     <script src="../assets/style/jquery-3.7.0.min.js"></script>
     <!-- swiper script -->
-    <script src="../common/swiper-bundle.min.js"></script>
+    <script src="./swiper-bundle.min.js"></script>
     <!-- info script -->
     <script defer src="./info.js"></script>
 </head>
@@ -57,12 +56,12 @@
         </section>
 
         <!--- swiper --->
-        <section class="swiper_wrapper">
+        <section class="swiper mySwiper">
             <!-- swiper 영역 -->
-            <div class="swiper_wrapper_inner flex">
+            <div class="swiper-wrapper flex">
                 <!-- swiper 개별 -->
-                <div class="wrapper_inner_box flex">
-                    <div class="swiper_wrapper_txt flex">
+                <div class="swiper-slide flex">
+                    <div class="swiper_txt flex">
                         <p class="sm">Information</p>
                         <h3 class="title2">Jeju<span>Museum</span></h3>
                         <address>제주특별자치도 서귀포시 색달동 2889번지 중문관광단지 입구</address>
@@ -70,11 +69,11 @@
                         <p class="mini1">이용시간</p>
                         <p class="mini2">09:00 ~ 18:00 (입장마감 17:30)</p>
                     </div>
-                    <div class="swiper_wrapper_img1">
+                    <div class="swiper_img1">
                     </div>
                 </div>
-                <div class="wrapper_inner_box flex">
-                    <div class="swiper_wrapper_txt flex">
+                <div class="swiper-slide flex">
+                    <div class="swiper_txt flex">
                         <p class="sm">Information</p>
                         <h3 class="title2">Seorak<span>Museum</span></h3>
                         <address>강원도 고성군 토성면 원암리 미시령옛길 1153</address>
@@ -82,11 +81,11 @@
                         <p class="mini1">이용시간</p>
                         <p class="mini2">09:00 ~ 18:00 (입장마감 17:00)</p>
                     </div>
-                    <div class="swiper_wrapper_img2">
+                    <div class="swiper_img2">
                     </div>
                 </div>
-                <div class="wrapper_inner_box flex">
-                    <div class="swiper_wrapper_txt flex">
+                <div class="swiper-slide flex">
+                    <div class="swiper_txt flex">
                         <p class="sm">Information</p>
                         <h3 class="title2">Yeosu<span>Museum</span></h3>
                         <address>전라남도 여수시 박람회길1 엑스포해양공원 국제관 D동 1층</address>
@@ -94,11 +93,11 @@
                         <p class="mini1">이용시간</p>
                         <p class="mini2">10:00 ~ 19:00 (입장마감 18:00)</p>
                     </div>
-                    <div class="swiper_wrapper_img3">
+                    <div class="swiper_img3">
                     </div>
                 </div>
-                <div class="wrapper_inner_box flex">
-                    <div class="swiper_wrapper_txt flex">
+                <div class="swiper-slide flex">
+                    <div class="swiper_txt flex">
                         <p class="sm">Information</p>
                         <h3 class="title2">Gunsan<span>Museum</span></h3>
                         <address>전라북도 군산시 구영 7길 37</address>
@@ -106,7 +105,7 @@
                         <p class="mini1">이용시간</p>
                         <p class="mini2">10:00~19:00 (입장마감 18:00)</p>
                     </div>
-                    <div class="swiper_wrapper_img4">
+                    <div class="swiper_img4">
                     </div>
                 </div>
             </div>
@@ -161,44 +160,59 @@
 
     <!----- footer ----->
     <footer>
-        <div class="container">
-            <ul>
-                <li>TEDDY BEAR</li>
-                <li>(주)제이에스앤에프</li>
-            </ul>
-            <ul>
-                <li>
-                    Menu
-                    <ul>
-                        <li>Who</li>
-                        <li>What</li>
-                        <li>How</li>
-                    </ul>
-                </li>
-                <li>
-                    Contact
-                    <ul>
-                        <li>강남구 연주로 866 7층</li>
-                        <li>205-81-13977</li>
-                        <li>대표이사 : 김정수</li>
-                    </ul>
-                </li>
-                <li>
-                    Team
-                    <ul>
-                        <li>변준현</li>
-                        <li>윤연정</li>
-                        <li>조연희</li>
-                        <li>류경현</li>
-                    </ul>
-                </li>
-            </ul>
+        <ul class="gnb flex">
+            <li>
+                <ul class="company">
+                    <li>TEDDY BEAR</li>
+                    <li>(주)제이에스앤에프</li>
+                </ul>
+            </li>
+            <li class="gnb_box">
+                <ul>
+                    <li class="subhead">Menu</li>
+                    <li>
+                        <ul>
+                            <li><a href="#">Who</a></li>
+                            <li><a href="#">What</a></li>
+                            <li><a href="#">How</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="gnb_box">
+                <ul>
+                    <li class="subhead">Contact</li>
+                    <li>
+                        <ul>
+                            <li>강남구 연주로 866 7층</li>
+                            <li>205-81-13977</li>
+                            <li>대표이사 : 김정수</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="gnb_box">
+                <ul>
+                    <li class="subhead">Team</li>
+                    <li>
+                        <ul>
+                            <li><a href="#">변준현</a></li>
+                            <li><a href="#">윤연정</a></li>
+                            <li><a href="#">조연희</a></li>
+                            <li><a href="#">류경현</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
         </div>
         <div class="site">
-            <ul>
+            <ul class="flex">
                 <li>Copyright ⓒ TEDDY BEAR MUSEUM. All Rights Reserved.</li>
-                <li class="see_btn">
-                    <p><a href="#">See all</a></p>
+                <li class="btn">
+                    <p><a href="#">기존 테디베어 사이트</a></p>
                 </li>
             </ul>
         </div>

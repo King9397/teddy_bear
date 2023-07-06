@@ -17,38 +17,37 @@
 }
 
 /*--- swiper ---*/
-.swiper_wrapper {
+.mySwiper {
   height: 100vh;
   margin: 10rem 0;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
-.swiper_wrapper .swiper_wrapper_inner {
+.mySwiper .swiper-wrapper {
   width: 400%;
 }
-.swiper_wrapper .swiper_wrapper_inner .wrapper_inner_box {
+.mySwiper .swiper-wrapper .swiper-slide {
   background-color: var(--color-gray);
   width: 100%;
   flex-grow: 0;
   justify-content: center;
   gap: 242px;
 }
-.swiper_wrapper .swiper_wrapper_inner .wrapper_inner_box .swiper_wrapper_txt {
-}
+
 /*- swiper-txt -*/
-.swiper_wrapper .swiper_wrapper_inner .swiper_wrapper_txt {
+.mySwiper .swiper-wrapper .swiper-slide .swiper_txt {
   flex-direction: column;
   justify-content: center;
 }
-.swiper_wrapper .swiper_wrapper_inner .swiper_wrapper_txt .sm {
+.mySwiper .swiper-wrapper .swiper-slide .swiper_txt .sm {
   font-family: var(--ko-font);
   font-size: var(--size-font20);
   letter-spacing: -1px;
 }
-.swiper_wrapper .swiper_wrapper_inner .swiper_wrapper_txt .title2 {
+.mySwiper .swiper-wrapper .swiper-slide .swiper_txt .title2 {
   text-align: left;
   margin: 3rem 0 5rem 0;
 }
-.swiper_wrapper .swiper_wrapper_inner .swiper_wrapper_txt address {
+.mySwiper .swiper-wrapper .swiper-slide .swiper_txt address {
   font-family: var(--ko-font);
   font-size: var(--size-font22);
   font-style: normal;
@@ -62,13 +61,13 @@
   position: relative;
 }
 .mini1::before {
-  content: "";
+  content: '';
   display: block;
   width: 5px;
   height: 30px;
   background-color: var(--color-pink);
   position: absolute;
-  top: -7px;
+  top: -4px;
   left: -9px;
 }
 .mini2 {
@@ -76,10 +75,10 @@
   font-size: var(--size-font22);
 }
 /*- swiper-img -*/
-.swiper_wrapper .swiper_wrapper_inner .swiper_wrapper_img1,
-.swiper_wrapper .swiper_wrapper_inner .swiper_wrapper_img2,
-.swiper_wrapper .swiper_wrapper_inner .swiper_wrapper_img3,
-.swiper_wrapper .swiper_wrapper_inner .swiper_wrapper_img4 {
+.mySwiper .swiper-wrapper .swiper_img1,
+.mySwiper .swiper-wrapper .swiper_img2,
+.mySwiper .swiper-wrapper .swiper_img3,
+.mySwiper .swiper-wrapper .swiper_img4 {
   width: 620px;
   height: 786px;
   background: var(--color-pink) url(./images/teddybear.jpg) no-repeat 100% / 96%

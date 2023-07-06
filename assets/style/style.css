@@ -40,6 +40,52 @@ header h1,
   letter-spacing: -5px;
 }
 
+/* footer */
+footer {
+  padding: 0 10%;
+  margin-top: 370px;
+  font-family: var(--ko-font);
+  font-size: 21px;
+}
+footer .gnb {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+footer .gnb .company li:nth-child(1) {
+  font-family: var(--en-font);
+  font-size: 35px;
+  padding: 0;
+}
+footer .gnb .company li:nth-child(2) {
+  margin-top: 69px;
+  font-family: var(--ko-font);
+  font-size: 24px;
+  font-weight: bold;
+}
+footer .gnb .gnb_box .subhead {
+  font-size: 24px;
+}
+footer .gnb li {
+  padding: 16px 0;
+  font-family: var(--ko-font);
+  font-size: 21px;
+}
+
+footer .site {
+  margin-top: 150px;
+  margin-bottom: 140px;
+}
+footer .site ul {
+  justify-content: space-between;
+  align-items: center;
+}
+footer .site ul .btn {
+  width: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* h2 */
 .title1 {
   font-family: var(--en-font);
