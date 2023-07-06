@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="../site.webmanifest">
+  <!-- <link rel="manifest" href="../site.webmanifest"> -->
 
   <!-- icon -->
   <link rel="stylesheet"
@@ -34,10 +34,21 @@
 
 <body>
   <!----- header ----->
-  <header></header>
+  <header class="menu_wrapper flex">
+    <h1><a href="#" class="menu_wrapper_logo">Teddy Bear</a></h1>
+    <div class="menu_wrapper_nav"><span></span><a href="#">Menu</a></div>
+    <ul class="menu_wrapper_list">
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">BRANCH</a></li>
+      <li><a href="#">INFO</a></li>
+    </ul>
+  </header>
+
   <!----- main ----->
   <main>
-    <img class='bear1' src="./images/bear1.png" alt="">
+    <div class="bear_wrapper">
+      <img class='bear1' src="./images/bear1.png" alt="">
+    </div>
     <!--- unique --->
     <section class="unique_wrapper">
       <h2 class="title1">Museum is unique <span class="block">to each branch!</span></h2>
@@ -94,22 +105,252 @@
     <section class="more_wrapper">
       <h4>지점 상세보기</h4>
       <ul class="museum_list">
-        <li>제주 테디베어뮤지엄</li>
-        <li>설악 테디베어뮤지엄</li>
-        <li>여수 테디베어뮤지엄</li>
-        <li>군산 테디베어뮤지엄</li>
+        <li>제주 테디베어뮤지엄
+          <div class="list_content_wrapper">
+            <p><span class="block">1902년 탄생 이래 전 연령층의 사랑을 받고있는 테디베어</span>제주 테디베어뮤지엄은 국내 최초이자 최대 규모의 테디베어 박물관으로 다양한
+              전시 콘텐츠를 선보이고
+              있습니다.
+            </p>
+            <ul class="list_content">
+              <li>
+                <img src="./images/jeju01.png" alt="">
+                <h5>역사관</h5>
+              </li>
+              <li><img src="./images/jeju02.png" alt="">
+                <h5>예술관</h5>
+              </li>
+              <li><img src="./images/jeju03.png" alt="">
+                <h5>기획전시</h5>
+              </li>
+              <li><img src="./images/jeju04.png" alt="">
+                <h5>야외정원</h5>
+              </li>
+              <li><img src="./images/jeju05.png" alt="">
+                <h5>슬로우 베어(야외무대)</h5>
+              </li>
+              <li><img src="./images/jeju06.png" alt="">
+                <h5>엘비스 공연장</h5>
+              </li>
+              <li><img src="./images/jeju07.png" alt="">
+                <h5>뮤지엄 샵</h5>
+              </li>
+              <li><img src="./images/jeju08.png" alt="">
+                <h5>테디베어 카페</h5>
+              </li>
+              <li><img src="./images/jeju09.png" alt="">
+                <h5>수유실</h5>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>설악 테디베어뮤지엄
+          <div class="list_content_wrapper">
+            <p><span class="block">테디윌슨과 페르난도가 함께 하는 설악 테디베어뮤지엄에서의 세계여행!</span> 전 세계 유명한 관광명소와 그들의 다양한 생활문화, 동화에서만 보고
+              상상하던
+              여러 주인공들을
+              테디베어로 표현하여 세계 문화를 보다 즐겁고 유쾌하게 관람할 수 있는 교육 전시이자 체험 전시입니다.</p>
+            <ul class="list_content">
+              <li><img src="./images/seorak01.png" alt="">
+                <h5>아시아</h5>
+              </li>
+              <li><img src="./images/seorak02.png" alt="">
+                <h5>아메리카, 유럽</h5>
+              </li>
+              <li><img src="./images/seorak03.png" alt="">
+                <h5>아프리카, 오세아니아</h5>
+              </li>
+              <li><img src="./images/seorak04.png" alt="">
+                <h5>동화마을</h5>
+              </li>
+              <li><img src="./images/seorak05.png" alt="">
+                <h5>궁 테디베어</h5>
+              </li>
+              <li><img src="./images/seorak06.png" alt="">
+                <h5>뮤지엄 샵</h5>
+              </li>
+              <li><img src="./images/seorak07.png" alt="">
+                <h5>아트 갤러리</h5>
+              </li>
+              <li><img src="./images/seorak08.png" alt="">
+                <h5>기네스 테디베어</h5>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>여수 테디베어뮤지엄
+          <div class="list_content_wrapper">
+            <p><span class="block">하와이 테디베어월드에서 선보였던 최고의 테디베어 전시를 여수로 옮겨왔습니다.</span>미국의 경이로운 관광지를 여행하는 테디베어와 살아있는 듯 생생하게
+              움직이는 공룡들을 만나볼 수 있으며,
+              8M 크기의 초대형 테디베어와 엘비스 프레슬리 공연, 다양한 컨셉의 포토존에서 즐거움을 만끽할 수 있습니다!</p>
+            <ul class="list_content">
+              <li><img src="./images/yeosu01.png" alt="">
+                <h5>Wonders of America 1</h5>
+              </li>
+              <li><img src="./images/yeosu02.png" alt="">
+                <h5>The World of Sweet Memories</h5>
+              </li>
+              <li><img src="./images/yeosu03.png" alt="">
+                <h5>Wonders of America 2</h5>
+              </li>
+              <li><img src="./images/yeosu04.png" alt="">
+                <h5>Dino Square</h5>
+              </li>
+              <li><img src="./images/yeosu05.png" alt="">
+                <h5>Elvis Theatre</h5>
+              </li>
+              <li><img src="./images/yeosu06.png" alt="">
+                <h5>Aquarium</h5>
+              </li>
+              <li><img src="./images/yeosu07.png" alt="">
+                <h5>Photo Zone</h5>
+              </li>
+              <li><img src="./images/yeosu08.png" alt="">
+                <h5>Save the Planet</h5>
+              </li>
+              <li><img src="./images/yeosu09.png" alt="">
+                <h5>Famous Teddy Bear</h5>
+              </li>
+              <li><img src="./images/yeosu10.png" alt="">
+                <h5>Art Gallery</h5>
+              </li>
+              <li><img src="./images/yeosu11.png" alt="">
+                <h5>Play Room</h5>
+              </li>
+              <li><img src="./images/yeosu12.png" alt="">
+                <h5>뮤지엄 샵</h5>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>군산 테디베어뮤지엄
+          <div class="list_content_wrapper">
+            <p><span class="block">사라진 테순이를 찾아 떠난 테디와 친구들의 모험이 펼처지는 군산테디베어 뮤지엄!</span>
+              20여개 나라의 현재와 과거의 모습을 담아, 역사 속에 기록된 다양한 러브스토리의 주인공들이 테디베어로 표현되어,
+              가족끼리, 친구끼리, 연인끼리 더욱 의미 있는 추억을 담을 수 있는 체험 전시 입니다</p>
+            <ul class="list_content">
+              <li><img src="./images/gunsan01.png" alt="">
+                <h5>DIORAMA</h5>
+              </li>
+              <li><img src="./images/gunsan02.png" alt="">
+                <h5>LOVE STORY</h5>
+              </li>
+              <li><img src="./images/gunsan03.png" alt="">
+                <h5>KENYA PLAINS</h5>
+              </li>
+              <li><img src="./images/gunsan04.png" alt="">
+                <h5>Gunsan History</h5>
+              </li>
+              <li><img src="./images/gunsan05.png" alt="">
+                <h5>ART GALLERY</h5>
+              </li>
+              <li><img src="./images/gunsan06.png" alt="">
+                <h5>뮤지엄 샵</h5>
+              </li>
+            </ul>
+          </div>
+        </li>
       </ul>
     </section>
     <!--- button --->
     <section class="together_wrapper">
       <div class="contentBox">
         <h3 class="title2">Teddy Bear <span class=".block">Museum together?</span></h3>
-        <div class="btn info_button">infomation</div>
+        <div><a href="../info/info.html" class="btn info_button">infomation</a></div>
+
+
+        <svg class="box_deco1" width="163" height="146" viewBox="0 0 163 146" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M78.1413 77.2399C80.3074 85.1289 74.7993 61.1272 71.6941 53.5589C69.8183 48.9868 64.4857 43.5468 59.288 42.7523C47.1542 40.8975 35.4742 43.8961 31.0105 56.6864C25.7817 71.6688 27.857 86.1272 33.3394 100.945C36.2118 108.708 36.64 116.763 38.8258 124.724C39.9496 128.817 40.5317 138.255 36.1864 141.094C28.4346 146.16 19.6015 123.061 33.3794 119.278C50.9994 114.44 68.0039 128.785 85.3903 128.025C92.5721 127.711 99.5248 128.096 105.881 124.107C114.789 118.516 118.252 105.95 114.953 96.385C111.533 86.4709 103.393 82.7747 94.5541 79.4543C91.0111 78.1234 88.0609 78.1521 84.3366 78.0179C82.2068 77.9411 78.8688 79.9703 77.476 78.4142"
+            stroke="black" stroke-width="3" stroke-linecap="round" />
+          <line x1="78.0792" y1="75.9054" x2="93.0497" y2="9.94993" stroke="black" stroke-width="3" />
+          <line x1="78.9975" y1="78.1267" x2="109.485" y2="28.5258" stroke="black" stroke-width="3" />
+          <line x1="81.6073" y1="77.0981" x2="140.488" y2="33.125" stroke="black" stroke-width="3" />
+        </svg>
+
+        <svg class="box_deco2" width="128" height="130" viewBox="0 0 128 130" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M95.6215 124.013C98.113 122.413 88.1343 111.553 86.7141 109.687C82.8332 104.589 76.4022 100.404 70.413 98.2931C58.0317 93.93 45.3044 94.1007 32.3428 93.7821C13.7014 93.3239 -3.42075 80.3894 3.76748 59.9912C6.57722 52.0179 13.1825 49.5929 21.2784 51.4953C28.5057 53.1936 35.8642 60.0983 28.2111 66.4349C23.5251 70.3148 17.2337 64.4463 16.9916 59.4132C16.6252 51.7964 19.1407 43.5168 24.6328 38.0481C29.6169 33.0852 39.9326 32.8468 45.1796 37.3941C51.0109 42.4478 52.756 53.5509 42.1453 53.012C33.9014 52.5932 34.2252 41.9348 34.2371 36.3816C34.2553 27.8199 38.9904 18.7786 46.901 14.9905C57.1364 10.0893 81.5498 20.1925 73.271 34.1233C70.1116 39.4398 65.3446 33.7475 63.6719 30.2542C60.74 24.1317 61.3639 16.9319 65.0446 11.2822C72.0559 0.520044 90.2682 -2.24296 93.9037 12.7343C94.7394 16.1772 94.2865 26.392 88.8402 25.6166C81.3451 24.5496 85.5188 14.4513 87.1319 10.6099C89.3518 5.3233 97.1985 3.58466 102.262 4.30547C107.287 5.02081 111.311 9.94193 112.755 14.663C117.283 29.4716 111.568 44.5549 110.604 59.6261C110.019 68.7605 112.445 78.0304 116.356 86.1974C118.472 90.6168 122.136 94.1075 124.184 98.3845C125.23 100.57 127.226 101.046 124.975 103.041C122.736 105.023 121 108.673 118.791 110.926C115.108 114.684 111.377 118.113 107.404 121.58C105.546 123.201 101.616 125.907 101.578 128.133"
+            stroke="black" stroke-width="3" stroke-linecap="round" />
+        </svg>
+
+        <svg class="box_deco3" width="121" height="115" viewBox="0 0 121 115" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M46.2976 1.91096C66.6811 -3.13968 58.3315 46.3202 3.70889 71.1873C42.0193 76.1181 37.6643 71.0157 73.2343 110.623C68.7535 88.3816 69.7129 54.8328 120.187 42.3264C70.9471 44.568 -8.10698 38.4687 46.2976 1.91096Z"
+            stroke="black" stroke-width="2" />
+        </svg>
+
+        <svg class="box_deco4" width="96" height="99" viewBox="0 0 96 99" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.376985 35.1542C37.5331 42.6522 60.1196 16.6508 68.83 1.2988C61.1416 24.034 74.001 48.4397 95.107 67.189C62.8988 56.2972 41.5958 82.8734 36.1545 97.9234C48.3277 61.926 18.1621 41.8723 0.376985 35.1542Z"
+            stroke="black" stroke-width="2" />
+        </svg>
+        <img class="bear2" src="./images/bear2.png" alt="">
       </div>
     </section>
   </main>
   <!----- footer ----->
-  <footer></footer>
+  <footer>
+    <ul class="gnb flex">
+      <li>
+        <ul class="company">
+          <li>TEDDY BEAR</li>
+          <li>(주)제이에스앤에프</li>
+        </ul>
+      </li>
+      <li class="gnb_box">
+        <ul>
+          <li class="subhead">Menu</li>
+          <li>
+            <ul>
+              <li>Who</li>
+              <li>What</li>
+              <li>How</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="gnb_box">
+        <ul>
+          <li class="subhead">Contact</li>
+          <li>
+            <ul>
+              <li>강남구 연주로 866 7층</li>
+              <li>205-81-13977</li>
+              <li>대표이사 : 김정수</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="gnb_box">
+        <ul>
+          <li class="subhead">Team</li>
+          <li>
+            <ul>
+              <li><a href="#">변준현</a></li>
+              <li><a href="#">윤연정</a></li>
+              <li><a href="#">조연희</a></li>
+              <li><a href="#">류경현</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    </div>
+    <div class="site">
+      <ul class="flex">
+        <li>Copyright ⓒ TEDDY BEAR MUSEUM. All Rights Reserved.</li>
+        <li class="btn">
+          <p><a href="#">기존 테디베어 사이트</a></p>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 
 </html>
