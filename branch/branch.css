@@ -1,25 +1,158 @@
 @charset "utf-8";
 
+@import url(../assets/style/variable.css);
+body {
+  line-height: 1;
+}
 .block {
   display: block;
 }
 img {
   width: 16.979vw;
 }
-body {
-  font-family: 'Helvetica95', 'Batang', sans-serif;
-}
+/*----- header -----*/
+
+/*----- main -----*/
 main {
+  font-family: var(--en-font);
   text-align: center;
 }
 section {
   height: 960px;
 }
+.bear1 {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%);
+  z-index: -1;
+}
+/*--- unique ---*/
 main .unique_wrapper {
+  display: grid;
+  place-items: center;
 }
-main .unique_wrapper h2 {
-  font-size: 140px;
-  font-weight: 900;
+main .unique_wrapper .deco {
+  position: absolute;
+  bottom: 0;
 }
-main .unique_wrapper h2 {
+
+/*--- fabric ---*/
+main .fabric_wrapper {
+  position: relative;
 }
+main .bigText {
+  position: absolute;
+  font-size: 11.25rem;
+}
+main .bigText img {
+  position: absolute;
+  z-index: -1;
+}
+main .bigText p {
+  text-align: left;
+  text-indent: 5px;
+  font-family: var(--ko-font);
+  font-size: var(--size-font30);
+  margin-top: 40px;
+}
+main .fabric {
+  top: 20%;
+  left: 34%;
+}
+main .cotton {
+  bottom: 21%;
+  right: 4%;
+}
+main .needle {
+  bottom: 13%;
+  left: 5%;
+}
+main .fabric .fabric_img {
+  width: 400px;
+  top: -65%;
+  left: -1%;
+}
+main .cotton .cotton_img {
+  width: 346px;
+  bottom: 16%;
+  right: 9%;
+}
+main .needle .needle_img {
+  width: 433px;
+  bottom: -15%;
+  left: 6%;
+}
+main svg {
+  position: absolute;
+}
+main .arrow1 {
+  top: 14%;
+  left: 13%;
+  transform: rotate(21deg);
+}
+main .arrow2 {
+  top: 15%;
+  right: 10%;
+  transform: rotate(-5deg);
+}
+main .arrow3 {
+  left: 45%;
+  bottom: 10%;
+  transform: rotate(5deg);
+}
+/*--- more ---*/
+main .more_wrapper {
+  background-color: var(--color-gray);
+  font-size: 40px;
+  font-family: var(--ko-font);
+}
+main .more_wrapper h4 {
+  font-weight: bold;
+  font-size: 6.25rem;
+  padding: 111px 0 75px;
+}
+main .more_wrapper .museum_list {
+}
+main .more_wrapper .museum_list li {
+  text-align: left;
+  padding: 30px 75px;
+  width: 43%;
+  margin: 0 auto 25px;
+  background-color: #fff;
+  position: relative;
+}
+main .more_wrapper .museum_list li::after {
+  content: '\e5cf';
+  font-family: 'Material Symbols Outlined';
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+}
+
+/*--- together ---*/
+main .together_wrapper {
+  height: 830px;
+  padding: 111px 0;
+}
+main .together_wrapper .contentBox {
+  width: 82%;
+  height: 100%;
+  background-color: var(--color-pink);
+  margin: 0 auto;
+}
+main .together_wrapper .contentBox h3 {
+  padding-top: 143px;
+  margin-bottom: 40px;
+}
+main .together_wrapper .contentBox .info_button {
+  background: #fff;
+  color: #000;
+  font-size: var(--size-font30);
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+}
+
+/*----- footer ------*/

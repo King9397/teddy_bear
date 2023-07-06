@@ -12,6 +12,10 @@
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="../site.webmanifest">
 
+  <!-- icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
   <!-- reset -->
   <link rel="stylesheet" href="../assets/style/reset.css">
 
@@ -29,29 +33,82 @@
 </head>
 
 <body>
+  <!----- header ----->
   <header></header>
+  <!----- main ----->
   <main>
-    <img src="./images/bear1.png" alt="">
+    <img class='bear1' src="./images/bear1.png" alt="">
+    <!--- unique --->
     <section class="unique_wrapper">
-      <h2>Museum is unique <span class="block">to each branch!</span></h2>
+      <h2 class="title1">Museum is unique <span class="block">to each branch!</span></h2>
+      <div class="deco">Out branches</div>
     </section>
 
+    <!--- fabric --->
     <section class="fabric_wrapper">
+      <div class="bigText fabric">
+        <span>Fabric</span>
+        <p>마티와 함께 떠나는 세계문화여행기</p>
+        <img class="fabric_img" src="./images/fabric.png" alt="">
+      </div>
+      <div class="bigText cotton">
+        <span>Cotton</span>
+        <p>마티와 함께 떠나는 세계문화여행기</p>
+        <img class="cotton_img" src="./images/cotton.png" alt="">
+      </div>
+      <div class="bigText needle">
+        <span>Needle</span>
+        <p>마티와 함께 떠나는 세계문화여행기</p>
+        <img class="needle_img" src="./images/needle.png" alt="">
+      </div>
+      <!-- svg -->
+
+      <svg class="arrow1" width="301" height="354" viewBox="0 0 301 354" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M105.274 330.916C28.9562 292.324 112.3 35.0584 149.182 197.863C186.064 360.667 -46.5852 160.259 207.325 21.2567"
+          stroke="black" stroke-width="4" />
+        <path d="M203.955 42.948C203.955 42.948 203.087 31.9724 211.631 19.3509" stroke="black" stroke-width="4" />
+        <path d="M186.467 13.1821C186.467 13.1821 195.942 19.8114 212.014 20.0032" stroke="black" stroke-width="4" />
+        <path d="M82.5986 338.613C82.5986 338.613 92.8845 332.893 108.885 334.177" stroke="black" stroke-width="4" />
+        <path d="M103.878 310.631C103.878 310.631 101.579 321.461 108.419 334.79" stroke="black" stroke-width="4" />
+      </svg>
+
+      <svg class="arrow2" width="257" height="288" viewBox="0 0 257 288" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M24.1862 42.571C43.0877 33.6995 248.509 205.269 99.7331 156.017C-49.0426 106.766 223.54 56.0195 234.546 243.098"
+          stroke="black" stroke-width="4" />
+        <path d="M223.283 236.849C223.283 236.849 230.004 239.106 235.556 247.088" stroke="black" stroke-width="4" />
+        <path d="M244.96 234.426C244.96 234.426 238.86 238.116 235.081 247.141" stroke="black" stroke-width="4" />
+        <path d="M35.1016 33.4983C35.1016 33.4983 30.3602 38.9237 21.0582 40.8964" stroke="black" stroke-width="4" />
+        <path d="M28.3467 54.9792C28.3467 54.9792 27.5993 47.7003 21.2042 40.4266" stroke="black" stroke-width="4" />
+      </svg>
+
+      <svg class="arrow3" width="292" height="86" viewBox="0 0 292 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M291.008 2.90644C291.009 1.80187 290.116 0.904865 289.011 0.902911L271.011 0.87111C269.907 0.869156 269.009 1.76301 269.008 2.86757C269.006 3.97214 269.899 4.86915 271.004 4.8711L287.004 4.89937L286.976 20.8993C286.974 22.0039 287.868 22.9009 288.972 22.9029C290.077 22.9048 290.974 22.011 290.976 20.9064L291.008 2.90644ZM1.12845 65.9648C0.134295 66.4462 -0.281436 67.6423 0.199916 68.6365L8.04391 84.8375C8.52523 85.8316 9.7214 86.2474 10.7156 85.766C11.7097 85.2847 12.1255 84.0885 11.6441 83.0943L4.67169 68.6935L19.0726 61.721C20.0667 61.2397 20.4825 60.0436 20.0011 59.0494C19.5198 58.0552 18.3236 57.6395 17.3295 58.1208L1.12845 65.9648ZM289.008 2.90291C287.596 1.4862 287.596 1.48604 287.596 1.48634C287.595 1.48706 287.594 1.48783 287.593 1.48926C287.59 1.49213 287.585 1.49685 287.578 1.50338C287.565 1.51646 287.545 1.53683 287.517 1.56436C287.461 1.61942 287.375 1.70309 287.26 1.81423C287.03 2.03651 286.684 2.36866 286.223 2.8015C285.301 3.66719 283.921 4.93551 282.103 6.53304C278.467 9.72832 273.08 14.2394 266.099 19.4795C252.134 29.9618 231.806 43.349 206.372 54.9583C155.513 78.1728 84.3057 94.2535 2.65662 65.8758L1.34343 69.6541C84.2243 98.4599 156.521 82.1096 208.033 58.5972C233.784 46.8431 254.359 33.2929 268.5 22.6786C275.572 17.3704 281.039 12.7934 284.744 9.53769C286.596 7.90973 288.008 6.61182 288.961 5.71766C289.437 5.27056 289.798 4.92438 290.042 4.68831C290.164 4.57028 290.257 4.47977 290.32 4.41794C290.351 4.38702 290.375 4.36327 290.392 4.34684C290.4 4.33862 290.407 4.33224 290.411 4.32769C290.413 4.32542 290.415 4.3234 290.417 4.32226C290.418 4.32071 290.419 4.31962 289.008 2.90291Z"
+          fill="black" />
+      </svg>
 
     </section>
+    <!--- more --->
     <section class="more_wrapper">
       <h4>지점 상세보기</h4>
-      <ul>
+      <ul class="museum_list">
         <li>제주 테디베어뮤지엄</li>
         <li>설악 테디베어뮤지엄</li>
         <li>여수 테디베어뮤지엄</li>
         <li>군산 테디베어뮤지엄</li>
       </ul>
     </section>
-    <section class="button_wrapper">
-      <h3>Teddy Bear Muserum together?</h3>
+    <!--- button --->
+    <section class="together_wrapper">
+      <div class="contentBox">
+        <h3 class="title2">Teddy Bear <span class=".block">Museum together?</span></h3>
+        <div class="btn info_button">infomation</div>
+      </div>
     </section>
   </main>
+  <!----- footer ----->
   <footer></footer>
 </body>
 

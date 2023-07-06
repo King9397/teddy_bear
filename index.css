@@ -1,1 +1,312 @@
 @charset "UTF-8";
+
+@import url(../teddy_bear/assets/style/variable.css);
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header .menu_wrapper{
+    display: none;
+}
+/*main 첫 번째 섹션(곰돌이 얼굴 움직이는 page)*/
+main .welcome{
+  height: 830px;
+  padding: 0 5%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 100px;
+}
+main .welcome .teddy_img{
+   z-index: 99;
+}
+main .welcome .teddy_img .ear1 img{
+    width: 174px; height: 160px;
+    position: absolute;
+    top: 30%; left: 40%;
+    transform: translate(-50%, -50%);
+    
+}
+main .welcome .teddy_img .face img{
+    width: 532px; height: 467px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+main .welcome .teddy_img .ear2 img{
+    width: 174px; height: 160px;
+    position: absolute;
+    top: 30%; right: 30%;
+    transform: translate(-50%, -50%);
+    z-index: -999;
+   
+}
+main .welcome .welcome_txt{
+    z-index: 9999;
+}
+main .welcome .welcome_txt h2{
+    text-align: center;
+
+}
+main .welcome .deco{
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*main main 두 번째 섹션(About 페이지)*/
+main .about{
+    padding-top: 300px;
+    height: 860px;
+    position: relative;
+    
+}
+main .about>p{
+    font-family: 'Gyeonggi';
+    text-align: center;
+    font-size: 54px;
+}
+
+main .about .btn{
+   position: absolute;
+   left: 50%;
+   right: 50%;
+   bottom: 200px;
+   transform: translate(-50%,-50%);
+   align-items: center;
+   justify-content: center;
+
+}
+main .about .keep{
+   width: 100px;
+   position: absolute;
+   left: 50%;
+   right: 50%;
+   bottom: 10px;
+   transform: translate(-50%,-50%);
+}
+
+/* main 세 번째 섹션(assets 페이지) */
+main .location{
+    height: 1200px;
+    font-family: var(--ko-font);
+}
+main .location .txt p{
+    padding-left: 144px;
+}
+
+main .location .location_theme{
+    justify-content: space-around;
+    gap: 250px;
+    align-items: center;
+}
+main .location .location_theme .title2{
+    font-size: 86px;
+    font-weight: normal;
+    text-align: left;
+}
+main .location .location_theme .location_txt p:nth-child(1){
+    font-family: var(--ko-font);
+    font-size: 21px;
+}
+main .location .location_theme .location_txt p:nth-child(2){
+    font-family: var(--en-font);
+    margin-top: 22px;
+    padding-left: 10px;
+    font-weight: 900;
+    position: relative;
+}
+main .location .location_theme .location_txt p:nth-child(2):before{
+    content: "";
+    background-color: var(--color-pink);
+    width: 5px; height: 33px;
+    position: absolute;
+    left: 0; top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+main .location .location_wrapper{
+    margin-top: 81px;
+    justify-content: flex-start;
+    margin-left: 144px;
+    gap: 40px;
+    overflow: hidden;
+}
+
+main .location .location_wrapper img{
+    width: 950px;
+    height: 550px;
+}
+
+main .location .location_wrapper .img_box .box_txt{
+    padding-top: 30px;
+}
+main .location .location_wrapper .img_box .box_txt p:nth-child(1){
+    font-family: var(--ko-font);
+    font-size: 33px;
+}
+main .location .location_wrapper .img_box .box_txt p:nth-child(2){
+    margin-top: 15px;
+    font-family: var(--ko-font);
+    font-size: 21px;
+}
+
+/* main 네 번째 섹션(장식 페이지) */
+main .animation {
+   position: relative;
+}
+main .animation .zookeeper p{
+   position: absolute;
+   top: 200px; left: 50%;
+   transform: translate(-50%, -50%);
+}
+main .animation .zookeeper{
+    height: 935px;
+    background-color: #F0F0F0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main .animation .where{
+    height: 800px;
+    text-align: center;
+    background-color: #FFAD99;
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .animation .where p:nth-child(1){
+    font-family: var(--ko-font);
+    font-size: 48px;
+
+}
+main .animation .where .btn{
+    margin-top: 77px;
+    background-color: var(--color-white);
+    color: black;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* main 다섯 번째 섹션(Teddy Bear 페이지) */
+main .bigfont{
+    width: 100%;
+    height: 800px;
+    margin-top: 209px;
+    text-align: center;
+    
+}
+/* 말풍선 아직 값 안줌 */
+main .bigfont .img_box{
+    position: relative;
+    z-index: 999;
+}
+main .bigfont img{
+    width: 279px;
+    height: 87px; 
+}
+main .bigfont .img_box p{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+main .bigfont .teddy{
+    margin-top: 92px;
+    font-size: 260px;
+    text-align: center;
+    
+}
+/* main 여섯 번째 섹션(스케줄 페이지) */
+main .schedule{
+    height: 910px;
+}
+main .schedule .txt{
+  text-align: center;
+}
+main .schedule .txt p{
+    margin-top: 60px;
+    margin-bottom: 47px;
+    font-family: var(--ko-font);
+    font-size: 21px;
+}
+main .schedule .wrapper{
+    flex-direction: row;
+    justify-content: space-around;
+}
+main .schedule .wrapper img{
+    width: 460px;
+    height: 320px;
+}
+
+main .schedule .wrapper .img_box{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+   
+}
+main .schedule .wrapper .img_box .box_txt{
+    height: 100%;
+    padding-left: 21px;
+}
+main .schedule .wrapper .img_box p:nth-child(1){
+    margin-top: 30px;
+    font-family: var(--ko-font);
+    font-size: var(--size-font24);
+}
+main .schedule .wrapper .img_box p:nth-child(2){
+    margin-top: 15px;
+    margin-bottom: 26px;
+    font-family: var(--ko-font);
+    font-size: 21px
+}
+main .schedule .btn{
+    margin: 153px auto;
+}
+
+/* footer */
+footer{
+    padding: 0 10%;
+    margin-top: 370px;
+    font-family: var(--ko-font);
+    font-size: 21px;
+}
+footer .gnb{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+footer .gnb .company li:nth-child(1){
+    font-family: var(--en-font);
+    font-size: 35px;
+    padding: 0;
+}
+footer .gnb .company li:nth-child(2){
+    margin-top: 69px;
+    font-family: var(--ko-font);
+    font-size: 24px;
+    font-weight: bold;
+}
+footer .gnb .gnb_box .subhead{
+  font-size: 24px;
+}
+footer .gnb li{
+    padding: 16px 0;
+    font-family: var(--ko-font);
+    font-size: 21px;
+}
+
+footer .site{
+    margin-top: 150px;
+    margin-bottom: 140px;
+}
+footer .site ul{
+    justify-content: space-between;
+    align-items: center;
+}
