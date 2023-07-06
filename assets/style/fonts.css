@@ -1,23 +1,25 @@
-@font-face{
-    font-family: "Helvetica-95-Black";
-    src: url(../fonts/Batang_Bold.woff);
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Helvetica95';
+  src: url('../fonts/Helvetica_Black.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-@font-face{
-    font-family: "Batang_Regular";
-    src: url(../fonts/Batang_Bold.woff);
-    font-weight: normal;
-    font-style: Bold;
-    font-display: swap;
+@font-face {
+  font-family: 'Batang';
+  src: url('../fonts/경기천년바탕_Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-@font-face{
-    font-family: "Batang_Bold";
-    src: url(../fonts/Batang_Bold.woff);
-    font-weight: normal;
-    font-style: Bold;
-    font-display: swap;
+@font-face {
+  font-family: 'Batang';
+  src: url('../fonts/경기천년바탕_Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
