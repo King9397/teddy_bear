@@ -1,1 +1,25 @@
 @charset "utf-8";
+
+.block {
+  display: block;
+}
+img {
+  width: 16.979vw;
+}
+body {
+  font-family: 'Helvetica95', 'Batang', sans-serif;
+}
+main {
+  text-align: center;
+}
+section {
+  height: 960px;
+}
+main .unique_wrapper {
+}
+main .unique_wrapper h2 {
+  font-size: 140px;
+  font-weight: 900;
+}
+main .unique_wrapper h2 {
+}
