@@ -23,12 +23,14 @@
   /* overflow: hidden; */
 }
 .swiper_wrapper .swiper_wrapper_inner {
+  width: 400%;
 }
 .swiper_wrapper .swiper_wrapper_inner .wrapper_inner_box {
   background-color: var(--color-gray);
   width: 100%;
   flex-grow: 0;
   justify-content: center;
+  gap: 242px;
 }
 .swiper_wrapper .swiper_wrapper_inner .wrapper_inner_box .swiper_wrapper_txt {
 }
@@ -60,7 +62,7 @@
   position: relative;
 }
 .mini1::before {
-  content: '';
+  content: "";
   display: block;
   width: 5px;
   height: 30px;
@@ -82,6 +84,7 @@
   height: 786px;
   background: var(--color-pink) url(./images/teddybear.jpg) no-repeat 100% / 96%
     94%;
+  margin: 106px 0;
 }
 
 /*--- china Museum ---*/
