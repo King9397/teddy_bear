@@ -18,6 +18,14 @@ header .menu_wrapper {
   display: none;
 }
 
+header h1 {
+  font-family: var(--ko-font);
+  font-size: 3.125rem;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: -5px;
+}
+
 .flex {
   display: flex;
 }

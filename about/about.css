@@ -2,7 +2,7 @@
 @import url(../assets/style/variable.css);
 
 header h1 {
-  color: #000;
+  /* color: var(color); */
   font-family: var(--ko-font);
   font-size: 3.125rem;
   font-weight: bold;
@@ -18,5 +18,14 @@ header .menu_wrapper {
   text-align: center;
   padding-top: 210px;
 }
-.title-wrapper .title-wrapper .title_wrapper .deco {
+.title_wrapper .title-wrapper_ani {
+}
+.title_wrapper .deco {
+  color: #000;
+  text-align: center;
+  font-family: GyeonggiBatang;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
