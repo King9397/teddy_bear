@@ -13,10 +13,10 @@ window.addEventListener('load', function () {
   }
 });
 
-var swiper = new Swiper('.mySwiper', {
-  // direction: 'vertical',
-  // loop: true,
-});
+// var swiper = new Swiper('.mySwiper', {
+//   // direction: 'vertical',
+//   // loop: true,
+// });
 
 //  메뉴 스크롤 (지우면x)
 $(document).ready(function () {
@@ -26,4 +26,15 @@ $(document).ready(function () {
     $('.menu_wrapper_list').toggleClass('hide');
     $('.menu_wrapper_box').toggleClass('color');
   });
+});
+
+$(window).on('scroll', () => {
+  const teddyTop = document.querySelector('.bigfont').offsetTop;
+  const teddyHeight = document.querySelector('.bigfont').clientHeight;
+  console.log(scrollY);
+  if (scrollY > teddyTop) {
+    $('.bigfont .teddy_wrapper .teddy_dark').css({
+      width: `${((scrollY - teddyTop) / teddyHeight) * 100}%`,
+    });
+  }
 });

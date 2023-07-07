@@ -356,11 +356,14 @@ main .animation .where .btn p {
 /* main 다섯 번째 섹션(Teddy Bear 페이지) */
 main .bigfont {
   width: 100%;
-  height: 800px;
-  margin-top: 209px;
+  height: 4000px;
+  padding: 209px 0;
   text-align: center;
 }
-
+main .bigfont .bigfont_wrapper {
+  position: sticky;
+  top: 20%;
+}
 main .bigfont .img_box {
   position: relative;
   z-index: 999;
@@ -378,11 +381,34 @@ main .bigfont .img_box p {
   font-family: var(--ko-font);
   font-size: 24px;
 }
-main .bigfont .teddy {
+main .bigfont .teddy_wrapper {
   margin-top: 92px;
+  position: relative;
+  display: inline-block;
+  font-family: var(--en-font);
+}
+main .bigfont .teddy {
   font-size: 260px;
   text-align: center;
+  opacity: 0.4;
+  display: inline-block;
+  position: relative;
 }
+main .bigfont .teddy_wrapper .teddy_dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  overflow: hidden;
+  font-size: 260px;
+  text-align: center;
+  transition: 1s;
+  color: #000;
+  white-space: nowrap;
+}
+/* main .bigfont .teddy_wrapper:hover .teddy_dark {
+  width: 100%;
+} */
 /* main 여섯 번째 섹션(스케줄 페이지) */
 main .schedule {
   height: 910px;
