@@ -1,3 +1,4 @@
+
 window.addEventListener('load', function() {
     var ear1 = document.querySelector('.welcome .container .ear1');
     var face = document.querySelector('.welcome .container .face');
@@ -18,3 +19,4 @@ window.addEventListener('load', function() {
       prevEl: ".swiper-prev",
      },
 });
+

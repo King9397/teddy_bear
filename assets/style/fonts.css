@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 @font-face {
-  font-family: "Helvetica95";
-  src: url("../fonts/Helvetica_Black.woff2") format("woff2");
+  font-family: "Helvetica-95-Black";
+  src: url("../fonts/Helvetica-95-Black.woff") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

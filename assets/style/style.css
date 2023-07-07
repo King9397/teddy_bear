@@ -22,13 +22,13 @@ span {
 
 /* header */
 header {
-  padding: 0 2%;
-  justify-content: space-between;
   padding-top: 27px;
 }
-
-header .menu_wrapper_list {
+.menu_wrapper_list {
   display: none;
+}
+header .hide {
+  display: block;
 }
 
 header h1,
@@ -110,7 +110,7 @@ footer .site ul .btn {
   text-align: center;
 }
 .deco::after {
-  content: '';
+  content: "";
   display: block;
   width: 2px;
   height: 48px;
@@ -128,4 +128,9 @@ footer .site ul .btn {
   font-weight: bold;
   text-align: center;
   color: #fff;
+}
+
+/* footer */
+footer .gnb .gnb_box .subhead {
+  font-weight: bold;
 }
