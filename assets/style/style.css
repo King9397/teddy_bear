@@ -1,6 +1,19 @@
 @charset "utf-8";
 
 /* 공통 스타일 */
+::-webkit-scrollbar {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 17px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  background: var(--color-pink);
+  border-radius: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   width: 100%;
@@ -53,6 +66,8 @@ header .menu_wrapper_list {
 header .hide {
   display: block;
 }
+<<<<<<< HEAD
+=======
 header .menu_wrapper_list li {
   font-family: var(--en-font);
   font-size: 100px;
@@ -129,6 +144,7 @@ header .menu_wrapper_list li:nth-child(3) svg:last-of-type path {
 header .menu_wrapper_list li:hover:nth-child(3) svg:last-of-type path {
   stroke-dashoffset: 0;
 }
+>>>>>>> b3238aa52fce31b856cf9cde1844f2bc61732d63
 header h1,
 .menu_wrapper_nav {
   font-family: var(--ko-font);

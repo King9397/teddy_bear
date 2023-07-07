@@ -257,8 +257,12 @@ main .location {
   overflow: hidden;
 }
 main .location .txt p {
+<<<<<<< HEAD
+  padding-left: 9rem;
+=======
   /* padding-left: 144px; */
   margin-left: 9.5rem;
+>>>>>>> b3238aa52fce31b856cf9cde1844f2bc61732d63
   font-family: var(--ko-font);
   font-size: 21px;
 }
@@ -296,26 +300,60 @@ main .location .location_theme .location_txt p:nth-child(2):before {
   transform: translate(-50%, -50%);
 }
 
+<<<<<<< HEAD
+/*--- swiper ---*/
+main .location .mySwiper {
+  height: 100vh;
+  overflow: hidden;
+}
+
+main .location .mySwiper .swiper-wrapper {
+  width: 400%;
+}
+
+main .mySwiper .swiper-wrapper .swiper-slide {
+=======
 main .location .swiper {
   height: 100%;
   margin-left: 150px;
 }
 
 main .location .swiper .swiper-wrapper .swiper-slide {
+>>>>>>> b3238aa52fce31b856cf9cde1844f2bc61732d63
   width: 100%;
-  padding-top: 40px;
-  display: flex;
+}
+main .mySwiper .swiper-wrapper .swiper-slide .swiper_box {
   flex-direction: column;
+<<<<<<< HEAD
+=======
   justify-content: center;
   align-items: flex-start;
   margin-right: 20px;
+>>>>>>> b3238aa52fce31b856cf9cde1844f2bc61732d63
 }
-
-main .swiper .swiper-wrapper .swiper-slide img {
-  display: block;
+/*- swiper-img -*/
+main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img1,
+main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img2,
+main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img3,
+main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img4 {
   width: 950px;
   height: 550px;
+<<<<<<< HEAD
+}
+main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img1 {
+  background: url(./images/slide1.png) no-repeat;
+}
+main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img2 {
+  background: url(./images/slide1.png) no-repeat;
+}
+main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img3 {
+  background: url(./images/slide1.png) no-repeat;
+}
+main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img4 {
+  background: url(./images/slide1.png) no-repeat;
+=======
   object-fit: cover;
+>>>>>>> b3238aa52fce31b856cf9cde1844f2bc61732d63
 }
 main .location .swiper .swiper-wrapper .swiper-slide .box_txt {
   padding-top: 30px;
