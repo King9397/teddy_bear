@@ -8,11 +8,22 @@ window.addEventListener('load', function () {
     ear1.classList.add('move');
     face.classList.add('move');
     ear2.classList.add('move');
-  }
 
-  setTimeout(moveImagesToCenter, 100);
+    setTimeout(moveImagesToCenter, 100);
+  }
 });
+
 var swiper = new Swiper('.mySwiper', {
   // direction: 'vertical',
   // loop: true,
+});
+
+//  메뉴 스크롤 (지우면x)
+$(document).ready(function () {
+  $('.menu_wrapper_nav a').on('click', (e) => {
+    e.preventDefault();
+    $('.menu_wrapper_list').slideToggle();
+    $('.menu_wrapper_list').toggleClass('hide');
+    $('.menu_wrapper_box').toggleClass('color');
+  });
 });
