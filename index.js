@@ -24,3 +24,32 @@ const mySwiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// svg
+let line = document.querySelectorAll("svg path");
+$(window).on("scroll", () => {
+  line.forEach(function (a, idx) {
+    let length = a.getTotalLength();
+    // console.log(length);
+    if (scrollY > 3200) {
+      a.style.strokeDasharray = length;
+      a.style.strokeDashoffset = 0;
+    } else {
+      a.style.strokeDashoffset = length;
+    }
+  });
+});
+
+let line2 = document.querySelectorAll(".circle path");
+$(window).on("scroll", () => {
+  line2.forEach(function (a, idx) {
+    let length = a.getTotalLength();
+    // console.log(length);
+    if (scrollY > 4800) {
+      a.style.strokeDasharray = length;
+      a.style.strokeDashoffset = 0;
+    } else {
+      a.style.strokeDashoffset = length;
+    }
+  });
+});

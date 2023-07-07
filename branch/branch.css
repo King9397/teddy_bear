@@ -235,8 +235,11 @@ main .together_wrapper .contentBox .info_button:hover {
   background-color: #000;
   color: white;
 }
-main .together_wrapper .contentBox svg {
+main .together_wrapper .contentBox > svg {
   position: absolute;
+}
+main .together_wrapper .contentBox > svg path {
+  transition: 1s;
 }
 main .together_wrapper .contentBox .box_deco1 {
   top: 117px;

@@ -66,8 +66,7 @@ header .menu_wrapper_list {
 header .hide {
   display: block;
 }
-<<<<<<< HEAD
-=======
+
 header .menu_wrapper_list li {
   font-family: var(--en-font);
   font-size: 100px;
@@ -81,27 +80,27 @@ header .menu_wrapper_list li a {
 
 header .menu_wrapper_list li:nth-child(1) svg {
   position: absolute;
-  top: 275px;
+  top: 270px;
   left: 45px;
 }
 header .menu_wrapper_list li:nth-child(2) svg:nth-child(1) {
   position: absolute;
-  top: 420px;
+  top: 400px;
   left: 465px;
 }
 header .menu_wrapper_list li:nth-child(2) svg:last-child {
   position: absolute;
-  top: 540px;
+  top: 515px;
   left: 19px;
 }
 header .menu_wrapper_list li:nth-child(3) svg:first-of-type {
   position: absolute;
-  top: 745px;
+  top: 710px;
   left: 115px;
 }
 header .menu_wrapper_list li:nth-child(3) svg:last-of-type {
   position: absolute;
-  top: 745px;
+  top: 710px;
   left: 150px;
 }
 header .menu_wrapper_list li:nth-child(1) svg path {
@@ -144,7 +143,7 @@ header .menu_wrapper_list li:nth-child(3) svg:last-of-type path {
 header .menu_wrapper_list li:hover:nth-child(3) svg:last-of-type path {
   stroke-dashoffset: 0;
 }
->>>>>>> b3238aa52fce31b856cf9cde1844f2bc61732d63
+
 header h1,
 .menu_wrapper_nav {
   font-family: var(--ko-font);
