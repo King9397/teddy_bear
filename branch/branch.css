@@ -164,8 +164,8 @@ main .more_wrapper .museum_list > li {
   position: relative;
 }
 main .more_wrapper .museum_list > li::after {
-  content: '\e5cf';
-  font-family: 'Material Symbols Outlined';
+  content: "\e5cf";
+  font-family: "Material Symbols Outlined";
   position: absolute;
   top: 50px;
   right: 40px;
@@ -235,12 +235,15 @@ main .together_wrapper .contentBox .info_button:hover {
   background-color: #000;
   color: white;
 }
-main .together_wrapper .contentBox svg {
+main .together_wrapper .contentBox > svg {
   position: absolute;
 }
+main .together_wrapper .contentBox > svg path {
+  transition: 1s;
+}
 main .together_wrapper .contentBox .box_deco1 {
-  top: 8%;
-  right: 6%;
+  top: 117px;
+  right: 271px;
 }
 main .together_wrapper .contentBox .box_deco2 {
   top: 20%;

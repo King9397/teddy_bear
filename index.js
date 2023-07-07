@@ -10,7 +10,6 @@ window.addEventListener('load', function () {
     face.classList.add('move');
     ear2.classList.add('move');
   }
-
   setTimeout(moveImagesToCenter, 100);
 });
 
@@ -32,6 +31,34 @@ $(document).ready(function () {
     $('.menu_wrapper_list').slideToggle();
     $('.menu_wrapper_list').toggleClass('hide');
     $('.menu_wrapper_box').toggleClass('color');
+  });
+});
+// svg
+let line = document.querySelectorAll('.where>svg path');
+$(window).on('scroll', () => {
+  line.forEach(function (a, idx) {
+    let length = a.getTotalLength();
+    // console.log(length);
+    if (scrollY > 3000) {
+      a.style.strokeDasharray = length;
+      a.style.strokeDashoffset = 0;
+    } else {
+      a.style.strokeDashoffset = length;
+    }
+  });
+});
+
+let line2 = document.querySelectorAll('.circle path');
+$(window).on('scroll', () => {
+  line2.forEach(function (a, idx) {
+    let length = a.getTotalLength();
+    // console.log(length);
+    if (scrollY > 4800) {
+      a.style.strokeDasharray = length;
+      a.style.strokeDashoffset = 0;
+    } else {
+      a.style.strokeDashoffset = length;
+    }
   });
 });
 

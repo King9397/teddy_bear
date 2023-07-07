@@ -6,15 +6,12 @@
   display: flex;
   align-items: center;
 }
-
-/*main 첫 번째 섹션(곰돌이 얼굴 움직이는 page)*/
 /*----- main ------*/
 main {
   font-family: var(--ko-font);
 }
 
 /*--- main 첫 번째 섹션(곰돌이 얼굴 움직이는 page) ---*/
-
 main .welcome {
   height: 830px;
   line-height: 75px;
@@ -25,11 +22,9 @@ main .welcome {
   position: relative;
   gap: 100px;
 }
-
 main .welcome .teddy_img {
   z-index: 9;
 }
-
 main .welcome .container .ear1,
 main .welcome .container .face,
 main .welcome .container .ear2 {
@@ -38,42 +33,35 @@ main .welcome .container .ear2 {
   z-index: 99;
   transition: transform 4s ease-in-out;
 }
-
 main .welcome .container .ear1 {
   top: 25%;
   left: 38%;
   transform: translate(-200%, -200%);
 }
-
 main .welcome .container .face {
   top: 50%;
   left: 50%;
   transform: translate(-200%, 100%);
 }
-
 main .welcome .container .ear2 {
   top: 25%;
   left: 62%;
   z-index: -99;
   transform: translate(100%, -300%);
 }
-
 main .welcome .container .ear1.move,
 main .welcome .container .face.move,
 main .welcome .container .ear2.move {
   transform: translate(-50%, -50%) rotate(360deg);
 }
-
 main .welcome .container .ear1 {
   width: 174px;
   height: 160px;
 }
-
 main .welcome .container .face {
   width: 532px;
   height: 467px;
 }
-
 main .welcome .container .ear2 {
   width: 174px;
   height: 160px;
@@ -109,7 +97,6 @@ main .about > p {
   font-size: 54px;
   line-height: 115%;
 }
-
 main .about .btn {
   position: absolute;
   left: 50%;
@@ -122,7 +109,6 @@ main .about .btn {
   overflow: hidden;
   z-index: 1;
 }
-
 main .about .btn:after {
   content: '';
   position: absolute;
@@ -144,7 +130,6 @@ main .about .btn:hover:after {
   transition: height 0.5s linear;
   height: 100%;
 }
-
 main .about .keep {
   width: 100px;
   position: absolute;
@@ -162,11 +147,10 @@ main .location {
   overflow: hidden;
 }
 main .location .txt p {
-  padding-left: 9rem;
+  margin-left: 9.5rem;
   font-family: var(--ko-font);
   font-size: 21px;
 }
-
 main .location .location_theme {
   justify-content: space-around;
   gap: 4.375rem;
@@ -205,16 +189,24 @@ main .location .mySwiper {
   height: 100vh;
   overflow: hidden;
 }
-
 main .location .mySwiper .swiper-wrapper {
   width: 400%;
 }
 
-main .mySwiper .swiper-wrapper .swiper-slide {
+/* main .mySwiper .swiper-wrapper .swiper-slide { */
+
+main .location .swiper {
+  height: 100%;
+  margin-left: 150px;
+}
+main .location .swiper .swiper-wrapper .swiper-slide {
   width: 100%;
 }
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box {
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 20px;
 }
 /*- swiper-img -*/
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img1,
@@ -235,6 +227,7 @@ main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img3 {
 }
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img4 {
   background: url(./images/slide1.png) no-repeat;
+  object-fit: cover;
 }
 main .location .swiper .swiper-wrapper .swiper-slide .box_txt {
   padding-top: 30px;
@@ -262,28 +255,38 @@ main .animation .zookeeper p {
   transform: translate(-50%, -50%);
 }
 main .animation .zookeeper {
-  height: 935px;
+  height: 800px;
   background-color: #f0f0f0;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-
 main .animation .where {
   height: 800px;
   text-align: center;
   background-color: #ffad99;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+main .animation .where svg path {
+  transition: 1s;
+}
+main .animation .where svg:nth-child(1) {
+  position: absolute;
+  top: 524px;
+  left: 131px;
+}
+main .animation .where svg:nth-child(2) {
+  position: absolute;
+  top: 51px;
+  right: 150px;
 }
 main .animation .where > p {
   font-family: var(--ko-font);
   font-size: 48px;
   line-height: 115%;
 }
-
 main .animation .where .btn {
   margin-top: 77px;
   background-color: var(--color-white);
@@ -295,7 +298,6 @@ main .animation .where .btn {
   overflow: hidden;
   z-index: 1;
 }
-
 main .animation .where .btn:after {
   content: '';
   position: absolute;
@@ -332,6 +334,14 @@ main .bigfont .bigfont_wrapper {
 main .bigfont .img_box {
   position: relative;
   z-index: 999;
+}
+main .bigfont .img_box .circle {
+  position: absolute;
+  top: -45px;
+  left: 813px;
+}
+main .bigfont .img_box .circle path {
+  transition: 1s;
 }
 main .bigfont img {
   width: 279px;
@@ -395,7 +405,6 @@ main .schedule .wrapper img {
   width: 460px;
   height: 320px;
 }
-
 main .schedule .wrapper .img_box {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -426,7 +435,6 @@ main .schedule .btn {
   overflow: hidden;
   z-index: 1;
 }
-
 main .schedule .btn:after {
   content: '';
   position: absolute;
@@ -448,7 +456,6 @@ main .schedule .btn:hover:after {
   transition: height 0.5s linear;
   height: 100%;
 }
-
 main .schedule .btn a {
   font-family: var(--ko-font);
   font-size: 24px;

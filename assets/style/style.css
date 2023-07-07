@@ -65,7 +65,6 @@ header .menu_wrapper_list {
 header .hide {
   display: block;
 }
-
 header .menu_wrapper_list li {
   font-family: var(--en-font);
   font-size: 100px;
@@ -76,10 +75,9 @@ header .menu_wrapper_list li a {
   position: relative;
   z-index: 999;
 }
-
 header .menu_wrapper_list li:nth-child(1) svg {
   position: absolute;
-  top: 275px;
+  top: 280px;
   left: 45px;
 }
 header .menu_wrapper_list li:nth-child(2) svg:nth-child(1) {
@@ -89,17 +87,17 @@ header .menu_wrapper_list li:nth-child(2) svg:nth-child(1) {
 }
 header .menu_wrapper_list li:nth-child(2) svg:last-child {
   position: absolute;
-  top: 540px;
+  top: 535px;
   left: 19px;
 }
 header .menu_wrapper_list li:nth-child(3) svg:first-of-type {
   position: absolute;
-  top: 745px;
+  top: 740px;
   left: 115px;
 }
 header .menu_wrapper_list li:nth-child(3) svg:last-of-type {
   position: absolute;
-  top: 745px;
+  top: 740px;
   left: 150px;
 }
 header .menu_wrapper_list li:nth-child(1) svg path {
@@ -142,7 +140,6 @@ header .menu_wrapper_list li:nth-child(3) svg:last-of-type path {
 header .menu_wrapper_list li:hover:nth-child(3) svg:last-of-type path {
   stroke-dashoffset: 0;
 }
-
 header h1,
 .menu_wrapper_nav {
   font-family: var(--ko-font);
@@ -182,7 +179,6 @@ footer .gnb li {
   font-family: var(--ko-font);
   font-size: 21px;
 }
-
 footer .site {
   margin-top: 150px;
   margin-bottom: 140px;
@@ -245,4 +241,30 @@ footer .site ul .btn {
 /* footer */
 footer .gnb .gnb_box .subhead {
   font-weight: bold;
+}
+footer .flex .btn {
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+footer .flex .btn:after {
+  content: '';
+  position: absolute;
+  bottom: auto;
+  border-radius: 3.125rem;
+  background-color: var(--color-gray);
+  width: 100%;
+  left: 0;
+  height: 0;
+  transition: 0.5s;
+  z-index: -1;
+  top: 0;
+}
+footer .flex .btn:hover {
+  color: black;
+  transition: linear 2s;
+}
+footer .flex .btn:hover:after {
+  transition: height 0.5s linear;
+  height: 100%;
 }
