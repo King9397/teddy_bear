@@ -18,9 +18,8 @@
 header .menu_wrapper {
   position: relative;
 }
-header .menu_wrapper .menu_wrapper_nav .menu_wrapper_svg span {
-  display: block;
-  height: 1px;
+header .menu_wrapper .menu_wrapper_nav svg {
+  padding-left: 3px;
 }
 header .menu_wrapper_box {
   justify-content: space-between;
@@ -42,7 +41,13 @@ header .menu_wrapper_list li {
   font-family: var(--en-font);
   font-size: 100px;
   padding-bottom: 50px;
+  width: 450px;
 }
+header .menu_wrapper_list li a {
+  position: relative;
+  z-index: 999;
+}
+
 header .menu_wrapper_list li:nth-child(1) svg {
   position: absolute;
   top: 125px;
@@ -68,10 +73,45 @@ header .menu_wrapper_list li:nth-child(3) svg:last-of-type {
   top: 600px;
   left: 150px;
 }
-
+header .menu_wrapper_list li:nth-child(1) svg path {
+  stroke-dasharray: 1184;
+  stroke-dashoffset: 1184;
+  transition: 1s;
+}
+header .menu_wrapper_list li:nth-child(1) a:hover svg path {
+  stroke-dashoffset: 0;
+}
 header .menu_wrapper_list li:nth-child(2) svg:nth-child(1) path {
-  stroke-dasharray: 500;
-  stroke-dashoffset: 500;
+  stroke-dasharray: 343;
+  stroke-dashoffset: 343;
+  transition: 1s;
+}
+header .menu_wrapper_list li:hover:nth-child(2) svg:nth-child(1) path {
+  stroke-dashoffset: 0;
+}
+header .menu_wrapper_list li:nth-child(2) svg:last-child path {
+  stroke-dasharray: 512;
+  stroke-dashoffset: 512;
+  transition: 1s;
+}
+header .menu_wrapper_list li:hover:nth-child(2) svg:last-child path {
+  stroke-dashoffset: 0;
+}
+header .menu_wrapper_list li:nth-child(3) svg:first-of-type path {
+  stroke-dasharray: 56;
+  stroke-dashoffset: 56;
+  transition: 1s;
+}
+header .menu_wrapper_list li:hover svg:first-of-type path {
+  stroke-dashoffset: 0;
+}
+header .menu_wrapper_list li:nth-child(3) svg:last-of-type path {
+  stroke-dasharray: 406;
+  stroke-dashoffset: 406;
+  transition: 1s;
+}
+header .menu_wrapper_list li:hover:nth-child(3) svg:last-of-type path {
+  stroke-dashoffset: 0;
 }
 /*main 첫 번째 섹션(곰돌이 얼굴 움직이는 page)*/
 main .welcome {
