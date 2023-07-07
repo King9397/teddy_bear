@@ -22,9 +22,9 @@ span {
 
 /* header */
 header {
-  padding-top: 27px;
   position: sticky;
   width: 100%;
+  height: ;
   top: 0;
   z-index: 99999;
 }

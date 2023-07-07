@@ -19,5 +19,6 @@ $(document).ready(function () {
     e.preventDefault();
     $(".menu_wrapper_list").slideToggle();
     $(".menu_wrapper_list").toggleClass("hide");
+    $(".menu_wrapper_box").toggleClass("color");
   });
 });
