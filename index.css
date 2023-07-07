@@ -6,7 +6,6 @@
   display: flex;
   align-items: center;
 }
-
 /*----- main ------*/
 main {
   font-family: var(--ko-font);
@@ -111,7 +110,7 @@ main .about .btn {
   z-index: 1;
 }
 main .about .btn:after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: auto;
   border-radius: 3.125rem;
@@ -148,7 +147,6 @@ main .location {
   overflow: hidden;
 }
 main .location .txt p {
-  padding-left: 9rem;
   margin-left: 9.5rem;
   font-family: var(--ko-font);
   font-size: 21px;
@@ -176,7 +174,7 @@ main .location .location_theme .location_txt p:nth-child(2) {
   position: relative;
 }
 main .location .location_theme .location_txt p:nth-child(2):before {
-  content: "";
+  content: '';
   background-color: var(--color-pink);
   width: 5px;
   height: 33px;
@@ -194,13 +192,21 @@ main .location .mySwiper {
 main .location .mySwiper .swiper-wrapper {
   width: 400%;
 }
-main .mySwiper .swiper-wrapper .swiper-slide {
+
+/* main .mySwiper .swiper-wrapper .swiper-slide { */
+
+main .location .swiper {
+  height: 100%;
+  margin-left: 150px;
 }
 main .location .swiper .swiper-wrapper .swiper-slide {
   width: 100%;
 }
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box {
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 20px;
 }
 /*- swiper-img -*/
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img1,
@@ -221,6 +227,7 @@ main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img3 {
 }
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img4 {
   background: url(./images/slide1.png) no-repeat;
+  object-fit: cover;
 }
 main .location .swiper .swiper-wrapper .swiper-slide .box_txt {
   padding-top: 30px;
@@ -248,7 +255,7 @@ main .animation .zookeeper p {
   transform: translate(-50%, -50%);
 }
 main .animation .zookeeper {
-  height: 935px;
+  height: 800px;
   background-color: #f0f0f0;
   align-items: center;
   justify-content: center;
@@ -258,10 +265,22 @@ main .animation .where {
   height: 800px;
   text-align: center;
   background-color: #ffad99;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+main .animation .where svg path {
+  transition: 1s;
+}
+main .animation .where svg:nth-child(1) {
+  position: absolute;
+  top: 524px;
+  left: 131px;
+}
+main .animation .where svg:nth-child(2) {
+  position: absolute;
+  top: 51px;
+  right: 150px;
 }
 main .animation .where > p {
   font-family: var(--ko-font);
@@ -280,7 +299,7 @@ main .animation .where .btn {
   z-index: 1;
 }
 main .animation .where .btn:after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: auto;
   border-radius: 3.125rem;
@@ -304,13 +323,25 @@ main .animation .where .btn:hover:after {
 /*--- main 다섯 번째 섹션(Teddy Bear 페이지) ---*/
 main .bigfont {
   width: 100%;
-  height: 800px;
-  margin-top: 209px;
+  height: 4000px;
+  padding: 209px 0;
   text-align: center;
+}
+main .bigfont .bigfont_wrapper {
+  position: sticky;
+  top: 20%;
 }
 main .bigfont .img_box {
   position: relative;
   z-index: 999;
+}
+main .bigfont .img_box .circle {
+  position: absolute;
+  top: -45px;
+  left: 813px;
+}
+main .bigfont .img_box .circle path {
+  transition: 1s;
 }
 main .bigfont img {
   width: 279px;
@@ -325,13 +356,35 @@ main .bigfont .img_box p {
   font-family: var(--ko-font);
   font-size: 24px;
 }
-main .bigfont .teddy {
+main .bigfont .teddy_wrapper {
   margin-top: 92px;
+  position: relative;
+  display: inline-block;
+  font-family: var(--en-font);
+  white-space: nowrap;
+}
+main .bigfont .teddy {
   font-size: 260px;
   text-align: center;
+  opacity: 0.4;
+  display: inline-block;
+  position: relative;
 }
-
-/*--- main 여섯 번째 섹션(스케줄 페이지) ---*/
+main .bigfont .teddy_wrapper .teddy_dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  overflow: hidden;
+  font-size: 260px;
+  text-align: center;
+  transition: 0.1s;
+  color: #000;
+}
+/* main .bigfont .teddy_wrapper:hover .teddy_dark {
+  width: 100%;
+} */
+/* main 여섯 번째 섹션(스케줄 페이지) */
 main .schedule {
   height: 910px;
 }
@@ -383,7 +436,7 @@ main .schedule .btn {
   z-index: 1;
 }
 main .schedule .btn:after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: auto;
   border-radius: 3.125rem;
@@ -406,4 +459,32 @@ main .schedule .btn:hover:after {
 main .schedule .btn a {
   font-family: var(--ko-font);
   font-size: 24px;
+}
+/*----- footer ------*/
+footer .flex .btn {
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+
+footer .flex .btn:after {
+  content: '';
+  position: absolute;
+  bottom: auto;
+  border-radius: 3.125rem;
+  background-color: var(--color-gray);
+  width: 100%;
+  left: 0;
+  height: 0;
+  transition: 0.5s;
+  z-index: -1;
+  top: 0;
+}
+footer .flex .btn:hover {
+  color: black;
+  transition: linear 2s;
+}
+footer .flex .btn:hover:after {
+  transition: height 0.5s linear;
+  height: 100%;
 }
