@@ -2,78 +2,114 @@
 
 @import url(./assets/style/variable.css);
 
-.title1 {
-  font-family: var(--en-font);
-}
 .btn {
-  color: #fff;
-  text-align: center;
-  font-family: var(--ko-font);
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 800;
   display: flex;
   align-items: center;
 }
-header .menu_wrapper {
-  position: relative;
-}
-header .menu_wrapper .menu_wrapper_nav .menu_wrapper_svg span {
-  display: block;
-  height: 1px;
-}
+
+/*main 첫 번째 섹션(곰돌이 얼굴 움직이는 page)*/
+
 header .menu_wrapper_box {
   justify-content: space-between;
+  align-items: center;
   padding: 0 2%;
   position: absolute;
   z-index: 99999;
   width: 100%;
+  height: 120px;
 }
 header .menu_wrapper_list {
   width: 100%;
-  height: 700px;
+  height: 820px;
   background-color: var(--color-pink);
   position: absolute;
-  top: 0;
+  top: -120px;
   z-index: 9999;
-  padding: 150px 0 0 120px;
+  padding: 300px 0 0 120px;
 }
 header .menu_wrapper_list li {
   font-family: var(--en-font);
   font-size: 100px;
   padding-bottom: 50px;
+  width: 450px;
 }
+header .menu_wrapper_list li a {
+  position: relative;
+  z-index: 999;
+}
+
 header .menu_wrapper_list li:nth-child(1) svg {
   position: absolute;
-  top: 125px;
+  top: 275px;
   left: 45px;
 }
 header .menu_wrapper_list li:nth-child(2) svg:nth-child(1) {
   position: absolute;
-  top: 270px;
+  top: 420px;
   left: 465px;
 }
 header .menu_wrapper_list li:nth-child(2) svg:last-child {
   position: absolute;
-  top: 389px;
+  top: 540px;
   left: 19px;
 }
 header .menu_wrapper_list li:nth-child(3) svg:first-of-type {
   position: absolute;
-  top: 600px;
+  top: 745px;
   left: 115px;
 }
 header .menu_wrapper_list li:nth-child(3) svg:last-of-type {
   position: absolute;
-  top: 600px;
+  top: 745px;
   left: 150px;
 }
-
-header .menu_wrapper_list li:nth-child(2) svg:nth-child(1) path {
-  stroke-dasharray: 500;
-  stroke-dashoffset: 500;
+header .menu_wrapper_list li:nth-child(1) svg path {
+  stroke-dasharray: 1184;
+  stroke-dashoffset: 1184;
+  transition: 1s;
 }
-/*main 첫 번째 섹션(곰돌이 얼굴 움직이는 page)*/
+header .menu_wrapper_list li:nth-child(1) a:hover svg path {
+  stroke-dashoffset: 0;
+}
+header .menu_wrapper_list li:nth-child(2) svg:nth-child(1) path {
+  stroke-dasharray: 343;
+  stroke-dashoffset: 343;
+  transition: 1s;
+}
+header .menu_wrapper_list li:hover:nth-child(2) svg:nth-child(1) path {
+  stroke-dashoffset: 0;
+}
+header .menu_wrapper_list li:nth-child(2) svg:last-child path {
+  stroke-dasharray: 512;
+  stroke-dashoffset: 512;
+  transition: 1s;
+}
+header .menu_wrapper_list li:hover:nth-child(2) svg:last-child path {
+  stroke-dashoffset: 0;
+}
+header .menu_wrapper_list li:nth-child(3) svg:first-of-type path {
+  stroke-dasharray: 56;
+  stroke-dashoffset: 56;
+  transition: 1s;
+}
+header .menu_wrapper_list li:hover svg:first-of-type path {
+  stroke-dashoffset: 0;
+}
+header .menu_wrapper_list li:nth-child(3) svg:last-of-type path {
+  stroke-dasharray: 406;
+  stroke-dashoffset: 406;
+  transition: 1s;
+}
+header .menu_wrapper_list li:hover:nth-child(3) svg:last-of-type path {
+  stroke-dashoffset: 0;
+}
+/*----- main ------*/
+main {
+  font-family: var(--ko-font);
+}
+
+/*--- main 첫 번째 섹션(곰돌이 얼굴 움직이는 page) ---*/
+
 main .welcome {
   height: 830px;
   line-height: 75px;
@@ -157,14 +193,13 @@ main .welcome .deco {
   transform: translate(-50%, -50%);
 }
 
-/*main main 두 번째 섹션(About 페이지)*/
+/*--- main main 두 번째 섹션(About 페이지) ---*/
 main .about {
   padding-top: 300px;
   height: 860px;
   position: relative;
 }
 main .about > p {
-  font-family: "Gyeonggi";
   text-align: center;
   font-size: 54px;
   line-height: 115%;
@@ -178,7 +213,33 @@ main .about .btn {
   transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
+  font-size: var(--size-font24);
+  overflow: hidden;
+  z-index: 1;
 }
+
+main .about .btn:after {
+  content: "";
+  position: absolute;
+  bottom: auto;
+  border-radius: 3.125rem;
+  background-color: var(--color-gray);
+  width: 100%;
+  left: 0;
+  height: 0;
+  transition: 0.5s;
+  z-index: -1;
+  top: 0;
+}
+main .about .btn:hover {
+  color: black;
+  transition: linear 2s;
+}
+main .about .btn:hover:after {
+  transition: height 0.5s linear;
+  height: 100%;
+}
+
 main .about .keep {
   width: 100px;
   position: absolute;
@@ -188,7 +249,7 @@ main .about .keep {
   transform: translate(-50%, -50%);
 }
 
-/* main 세 번째 섹션(assets 페이지) */
+/*--- main 세 번째 섹션(assets 페이지) ---*/
 main .location {
   margin-top: 340px;
   height: 1200px;
@@ -196,13 +257,19 @@ main .location {
   overflow: hidden;
 }
 main .location .txt p {
+<<<<<<< HEAD
   padding-left: 9rem;
+=======
+  /* padding-left: 144px; */
+  margin-left: 9.5rem;
+>>>>>>> b3238aa52fce31b856cf9cde1844f2bc61732d63
   font-family: var(--ko-font);
   font-size: 21px;
 }
 
 main .location .location_theme {
   justify-content: space-around;
+  gap: 4.375rem;
   align-items: center;
 }
 main .location .location_theme .title2 {
@@ -233,6 +300,7 @@ main .location .location_theme .location_txt p:nth-child(2):before {
   transform: translate(-50%, -50%);
 }
 
+<<<<<<< HEAD
 /*--- swiper ---*/
 main .location .mySwiper {
   height: 100vh;
@@ -244,10 +312,24 @@ main .location .mySwiper .swiper-wrapper {
 }
 
 main .mySwiper .swiper-wrapper .swiper-slide {
+=======
+main .location .swiper {
+  height: 100%;
+  margin-left: 150px;
+}
+
+main .location .swiper .swiper-wrapper .swiper-slide {
+>>>>>>> b3238aa52fce31b856cf9cde1844f2bc61732d63
   width: 100%;
 }
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box {
   flex-direction: column;
+<<<<<<< HEAD
+=======
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 20px;
+>>>>>>> b3238aa52fce31b856cf9cde1844f2bc61732d63
 }
 /*- swiper-img -*/
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img1,
@@ -256,6 +338,7 @@ main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img3,
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img4 {
   width: 950px;
   height: 550px;
+<<<<<<< HEAD
 }
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img1 {
   background: url(./images/slide1.png) no-repeat;
@@ -268,6 +351,9 @@ main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img3 {
 }
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img4 {
   background: url(./images/slide1.png) no-repeat;
+=======
+  object-fit: cover;
+>>>>>>> b3238aa52fce31b856cf9cde1844f2bc61732d63
 }
 main .location .swiper .swiper-wrapper .swiper-slide .box_txt {
   padding-top: 30px;
@@ -282,7 +368,7 @@ main .location .swiper .swiper-wrapper .swiper-slide .box_txt p:nth-child(2) {
   font-size: 21px;
 }
 
-/* main 네 번째 섹션(장식 페이지) */
+/*--- main 네 번째 섹션(장식 페이지) ---*/
 main .animation {
   position: relative;
 }
@@ -311,23 +397,47 @@ main .animation .where {
   justify-content: center;
   align-items: center;
 }
-main .animation .where p {
+main .animation .where > p {
   font-family: var(--ko-font);
   font-size: 48px;
   line-height: 115%;
 }
+
 main .animation .where .btn {
   margin-top: 77px;
   background-color: var(--color-white);
   color: black;
+  font-size: var(--size-font24);
   align-items: center;
   justify-content: center;
-}
-main .animation .where .btn p {
-  font-size: 24px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
-/* main 다섯 번째 섹션(Teddy Bear 페이지) */
+main .animation .where .btn:after {
+  content: "";
+  position: absolute;
+  bottom: auto;
+  border-radius: 3.125rem;
+  background-color: black;
+  width: 100%;
+  left: 0;
+  height: 0;
+  transition: 0.5s;
+  z-index: -1;
+  top: 0;
+}
+main .animation .where .btn:hover {
+  color: rgb(255, 255, 255);
+  transition: linear 2s;
+}
+main .animation .where .btn:hover:after {
+  transition: height 0.5s linear;
+  height: 100%;
+}
+
+/*--- main 다섯 번째 섹션(Teddy Bear 페이지) ---*/
 main .bigfont {
   width: 100%;
   height: 800px;
@@ -357,7 +467,7 @@ main .bigfont .teddy {
   font-size: 260px;
   text-align: center;
 }
-/* main 여섯 번째 섹션(스케줄 페이지) */
+/*--- main 여섯 번째 섹션(스케줄 페이지) ---*/
 main .schedule {
   height: 910px;
 }
@@ -403,9 +513,64 @@ main .schedule .btn {
   text-align: center;
   display: flex;
   justify-content: center;
+  position: relative;
+}
+main .schedule .btn {
+  overflow: hidden;
+  z-index: 1;
+}
+
+main .schedule .btn:after {
+  content: "";
+  position: absolute;
+  bottom: auto;
+  border-radius: 3.125rem;
+  background-color: var(--color-gray);
+  width: 100%;
+  left: 0;
+  height: 0;
+  transition: 0.5s;
+  z-index: -1;
+  top: 0;
+}
+main .schedule .btn:hover {
+  color: black;
+  transition: linear 2s;
+}
+main .schedule .btn:hover:after {
+  transition: height 0.5s linear;
+  height: 100%;
 }
 
 main .schedule .btn a {
   font-family: var(--ko-font);
   font-size: 24px;
+}
+/*----- footer ------*/
+footer .flex .btn {
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+
+footer .flex .btn:after {
+  content: "";
+  position: absolute;
+  bottom: auto;
+  border-radius: 3.125rem;
+  background-color: var(--color-gray);
+  width: 100%;
+  left: 0;
+  height: 0;
+  transition: 0.5s;
+  z-index: -1;
+  top: 0;
+}
+footer .flex .btn:hover {
+  color: black;
+  transition: linear 2s;
+}
+footer .flex .btn:hover:after {
+  transition: height 0.5s linear;
+  height: 100%;
 }

@@ -12,3 +12,18 @@ const mySwiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// 이용안내 svg
+const arrow_left = document.querySelectorAll("svg path");
+$(window).on("scroll", () => {
+  arrow_left.forEach(function (a, idx) {
+    let length = a.getTotalLength();
+    // console.log(length);
+    if (scrollY > 3800) {
+      a.style.strokeDasharray = length;
+      a.style.strokeDashoffset = 0;
+    } else {
+      a.style.strokeDashoffset = length;
+    }
+  });
+});
