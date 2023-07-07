@@ -243,3 +243,29 @@ footer .site ul .btn {
 footer .gnb .gnb_box .subhead {
   font-weight: bold;
 }
+footer .flex .btn {
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+footer .flex .btn:after {
+  content: "";
+  position: absolute;
+  bottom: auto;
+  border-radius: 3.125rem;
+  background-color: var(--color-gray);
+  width: 100%;
+  left: 0;
+  height: 0;
+  transition: 0.5s;
+  z-index: -1;
+  top: 0;
+}
+footer .flex .btn:hover {
+  color: black;
+  transition: linear 2s;
+}
+footer .flex .btn:hover:after {
+  transition: height 0.5s linear;
+  height: 100%;
+}
