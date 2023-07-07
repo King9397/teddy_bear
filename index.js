@@ -37,11 +37,13 @@ $(document).ready(function () {
 
 $(window).on('scroll', () => {
   const teddyTop = document.querySelector('.bigfont').offsetTop;
-  const teddyHeight = document.querySelector('.bigfont').clientHeight;
-  console.log(scrollY);
+  const teddyHeight =
+    document.querySelector('.bigfont').clientHeight -
+    document.documentElement.clientHeight;
   if (scrollY > teddyTop) {
     $('.bigfont .teddy_wrapper .teddy_dark').css({
       width: `${((scrollY - teddyTop) / teddyHeight) * 100}%`,
+      maxWidth: `100%`,
     });
   }
 });
