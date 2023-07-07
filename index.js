@@ -1,3 +1,4 @@
+// 첫번째 섹션 곰돌이
 window.addEventListener('load', function () {
   var ear1 = document.querySelector('.welcome .container .ear1');
   var face = document.querySelector('.welcome .container .face');
@@ -8,15 +9,21 @@ window.addEventListener('load', function () {
     ear1.classList.add('move');
     face.classList.add('move');
     ear2.classList.add('move');
-
-    setTimeout(moveImagesToCenter, 100);
   }
+
+  setTimeout(moveImagesToCenter, 100);
 });
 
-// var swiper = new Swiper('.mySwiper', {
-//   // direction: 'vertical',
-//   // loop: true,
-// });
+//세번째 섹션 자동 슬라이더
+const mySwiper = new Swiper('.mySwiper', {
+  spaceBetween: 30,
+  // centeredSlides: true,
+  slidesPerView: '1.5',
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 //  메뉴 스크롤 (지우면x)
 $(document).ready(function () {

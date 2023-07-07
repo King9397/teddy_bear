@@ -17,24 +17,22 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">
 
     <!-- reset -->
     <link rel="stylesheet" href="./assets/style/reset.css">
-
     <!-- font -->
     <link rel="stylesheet" href="./assets/style/fonts.css">
-
-    <!-- copen slide css-->
-
-    <!-- 공통 스타일 -->
+    <!-- swiper css -->
+    <link rel="stylesheet" href="./assets/style/swiper-bundle.min.css">
+    <!-- 공통 css -->
     <link rel="stylesheet" href="./assets/style/style.css">
-    <!-- 메인디자인css -->
+    <!-- index 디자인 css -->
     <link rel="stylesheet" href="./index.css">
+
 
     <!-- script -->
     <script src="././assets/style/jquery-3.7.0.min.js"></script>
-    <!-- copen slide script -->
+    <!-- swiper script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- index script -->
     <script defer src="./index.js"></script>
@@ -145,7 +143,7 @@
             <p>Teddy Bear Museum은 대한민국 대표<span class="next_line">뮤지엄이며 Teddy Bear 역사와</span><span class="next_line">예술을
                     다루며 세계로 확장 중입니다.</p>
             <div class="btn">
-                <p><a href="#">about</a></p>
+                <p><a href="./about/about.html"  target="_blank">about</a></p>
             </div>
             <div class="keep deco">
                 <p>keepgoing</p>
@@ -158,51 +156,66 @@
             </div>
             <div class="location_theme flex">
                 <h2 class="title2">Teddy bear<span class="next_line">museum in Korea</span></h2>
-
                 <div class="location_txt">
                     <p>다양한 테마와 재미있는 볼거리가 가득하고, 국내최초<span class="next_line"></span>테디베어 뮤지엄, 그 가치의 중심에서 세계 문화 여행기!<span
                             class="next_line">전세계 도시를 향한 친구들의 시공간 여행!</span></p>
-                    <p>See all</p>
+                    <p><a href="./branch/branch.html" target="_blank">See all</a></p>
                 </div>
             </div>
+            <!--- swiper --->
             <div class="swiper mySwiper">
+                <!-- swiper 영역 -->
                 <div class="swiper-wrapper flex">
-                    <div class="swiper-slide">
-                        <img src="./images/slide1.png" alt="">
-                        <div class="box_txt">
-                            <p>제주 테디베어 뮤지엄</p>
-                            <p>국내 최초 오리지널 테디베어 뮤지엄</p>
+                    <!-- swiper 개별 -->
+                    <div class="swiper-slide flex">
+                        <div class="swiper_box flex">
+                            <div class="swiper_img1"></div>
+                            <div class="swiper_txt">
+                                <p>제주 테디베어 뮤지엄</p>
+                                <p>국내 최초 오리지널 테디베어 뮤지엄</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex">
+                        <div class="swiper_box flex">
+                            <div class="swiper_img2"></div>
+                            <div class="swiper_txt">
+                                <p>설악 테디베어 뮤지엄</p>
+                                <p>테디월슨과 페르난도가 함께 떠나는 일주</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex">
+                        <div class="swiper_box flex">
+                            <div class="swiper_img3"></div>
+                            <div class="swiper_txt">
+                                <p>여수 테디베어 뮤지엄</p>
+                                <p>여수 앞바다에 상륙한 하와이 테디베어</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex">
+                        <div class="swiper_box flex">
+                            <div class="swiper_img3"></div>
+                            <div class="swiper_txt">
+                                <p>군산 테디베어 뮤지엄</p>
+                                <p>테디와 친구들의 도시로의 시공간여행</p>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./images/slide2.png" alt="">
-                        <div class="box_txt">
-                            <p>설악 테디베어 뮤지엄</p>
-                            <p>테디월슨과 페르난도가 함께 떠나는 일주</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./images/slide3.png" alt="">
-                        <div class="box_txt">
-                            <p>여수 테디베어 뮤지엄</p>
-                            <p>여수 앞바다에 상륙한 하와이 테디베어</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./images/slide4.png" alt="">
-                        <div class="box_txt">
-                            <p>군산 테디베어 뮤지엄</p>
-                            <p>테디와 친구들의 도시로의 시공간여행</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./images/slide5.png" alt="">
-                        <div class="box_txt">
-                            <p>청두 테디베어 뮤지엄</p>
-                            <p>판다의 고향에서 선보이는 테디베어뮤지엄</p>
+                        <div class="swiper_box flex">
+                            <div class="swiper_img4"></div>
+                            <div class="swiper_txt">
+                                <p>청두 테디베어 뮤지엄</p>
+                                <p>판다의 고향에서 선보이는 테디베어뮤지엄</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- 추가 옵션: 좌우 버튼 -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </section>
         <!--- main 네 번째 섹션(장식 페이지) --->
@@ -216,7 +229,7 @@
                 <p>마음을 따뜻하게 담아, 여정의 시작을 함께해요!<span class="next_line">당신의 모험과 발견의 순간을 지도 위에 펼쳐보세요.</span><span
                         class="next_line">지금부터 테디베어 친구들이 어디있는지 살펴볼까요?</span></p>
                 <div class="btn flex">
-                    <p><a href="#">where</a></p>
+                    <p><a href="#" target="_blank">where</a></p>
                 </div>
             </div>
         </section>
@@ -263,7 +276,7 @@
                 </div>
             </div>
             <div class="btn">
-                <p><a href="#">See all</a></p>
+                <p><a href="#" target="_blank">See all</a></p>
             </div>
         </section>
     </main>
