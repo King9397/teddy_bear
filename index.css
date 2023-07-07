@@ -143,6 +143,7 @@ main .location {
   margin-top: 340px;
   height: 1200px;
   font-family: var(--ko-font);
+  overflow: hidden;
 }
 main .location .txt p {
   /* padding-left: 144px; */
@@ -183,27 +184,37 @@ main .location .location_theme .location_txt p:nth-child(2):before {
   transform: translate(-50%, -50%);
 }
 
-main .location .location_wrapper {
-  margin-top: 81px;
-  justify-content: flex-start;
-  margin-left: 144px;
-  gap: 40px;
-  overflow: hidden;
+main .location .swiper {
+  height: 100%;
+  margin-left: 150px;
+
 }
 
-main .location .location_wrapper img {
+main .location .swiper .swiper-wrapper .swiper-slide{
+  width: 100%;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 20px;
+  
+}
+
+main .swiper .swiper-wrapper .swiper-slide img {
+  display: block;
   width: 950px;
   height: 550px;
-}
-
-main .location .location_wrapper .img_box .box_txt {
+  object-fit: cover;
+} 
+main .location .swiper .swiper-wrapper .swiper-slide .box_txt {
   padding-top: 30px;
 }
-main .location .location_wrapper .img_box .box_txt p:nth-child(1) {
+main .location .swiper .swiper-wrapper .swiper-slide .box_txt p:nth-child(1) {
   font-family: var(--ko-font);
   font-size: 33px;
 }
-main .location .location_wrapper .img_box .box_txt p:nth-child(2) {
+main .location .swiper .swiper-wrapper .swiper-slide .box_txt p:nth-child(2) {
   margin-top: 15px;
   font-family: var(--ko-font);
   font-size: 21px;
