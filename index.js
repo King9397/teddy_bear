@@ -16,11 +16,14 @@ window.addEventListener("load", function () {
 
 //세번째 섹션 자동 슬라이더
 const mySwiper = new Swiper(".mySwiper", {
-  spaceBetween: 10,
+  spaceBetween: -250,
   // centeredSlides: true,
-  slidesPerView: "1.5",
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  slidesPerView: "1.8",
+  slidesOffsetBefore: 100,
+  slidesOffsetAfter: -100,
+  pagination: {
+    el: "pagination_bullet",
+    // type: "bullets",
+    // clickable: true,
   },
 });
