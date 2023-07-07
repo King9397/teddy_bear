@@ -32,16 +32,6 @@
   justify-content: center;
   gap: 242px;
 }
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  color: var(--color-pink);
-}
-.swiper-button-next:after {
-  margin-right: 10px;
-}
-.swiper-button-prev:after {
-  margin-left: 10px;
-}
 
 /*- swiper-txt -*/
 .mySwiper .swiper-wrapper .swiper-slide .swiper_txt {
@@ -71,7 +61,7 @@
   position: relative;
 }
 .mini1::before {
-  content: '';
+  content: "";
   display: block;
   width: 5px;
   height: 30px;

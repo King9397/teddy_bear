@@ -1,6 +1,19 @@
 @charset "utf-8";
 
 /* 공통 스타일 */
+::-webkit-scrollbar {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 17px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  background: var(--color-pink);
+  border-radius: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   width: 100%;
@@ -30,7 +43,6 @@ header {
 header .hide {
   display: block;
 }
-
 header h1,
 .menu_wrapper_nav {
   font-family: var(--ko-font);
