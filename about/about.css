@@ -79,7 +79,7 @@
 .museum_wrapper .museum_wrapper-img .museum_wrapper-img1 {
   width: 475px;
   height: 464px;
-  background: url(./images/museum1.png) no-repeat 50% / cover;
+  background: url(./images/museum1.jpg) no-repeat 50% / cover;
   position: absolute;
   top: 220px;
   left: 485px;
@@ -200,7 +200,7 @@
   justify-content: center;
 }
 .processimg-wrapper .processimg-wrapper_img .processimg_img:nth-child(1) {
-  background: url(./images/about01.png) no-repeat 50% / 270px 270px;
+  background: url(./images/about7.png) no-repeat 50% / 270px 270px;
 }
 .processimg-wrapper .processimg-wrapper_img .processimg_img:nth-child(2) {
   background: url(./images/about02.png) no-repeat 50% / 270px 270px;
