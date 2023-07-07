@@ -3,10 +3,10 @@
 /* 변수 선언 */
 
 :root {
-  --en-font: 'Helvetica95', -apple-system, BlinkMacSystemFont, 'Malgun Gothic',
-    '맑은 고딕', helvetica, 'Apple SD Gothic Neo', sans-serif;
-  --ko-font: 'Gyeonggi', -apple-system, BlinkMacSystemFont, 'Malgun Gothic',
-    '맑은 고딕', helvetica, 'Apple SD Gothic Neo', sans-serif;
+  --en-font: "Helvetica-95-Black", -apple-system, BlinkMacSystemFont,
+    "Malgun Gothic", "맑은 고딕", "Apple SD Gothic Neo", sans-serif;
+  --ko-font: "Gyeonggi", -apple-system, BlinkMacSystemFont, "Malgun Gothic",
+    "맑은 고딕", "Apple SD Gothic Neo", sans-serif;
 
   --color-pink: #ffad99;
   --color-gray: #f0f0f0;
