@@ -78,27 +78,27 @@ header .menu_wrapper_list li a {
 }
 header .menu_wrapper_list li:nth-child(1) svg {
   position: absolute;
-  top: 270px;
+  top: 280px;
   left: 45px;
 }
 header .menu_wrapper_list li:nth-child(2) svg:nth-child(1) {
   position: absolute;
-  top: 400px;
+  top: 420px;
   left: 465px;
 }
 header .menu_wrapper_list li:nth-child(2) svg:last-child {
   position: absolute;
-  top: 515px;
+  top: 535px;
   left: 19px;
 }
 header .menu_wrapper_list li:nth-child(3) svg:first-of-type {
   position: absolute;
-  top: 710px;
+  top: 740px;
   left: 115px;
 }
 header .menu_wrapper_list li:nth-child(3) svg:last-of-type {
   position: absolute;
-  top: 710px;
+  top: 740px;
   left: 150px;
 }
 header .menu_wrapper_list li:nth-child(1) svg path {

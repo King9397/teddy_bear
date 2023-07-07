@@ -26,12 +26,12 @@ const mySwiper = new Swiper(".mySwiper", {
 });
 
 // svg
-let line = document.querySelectorAll("svg path");
+let line = document.querySelectorAll(".where>svg path");
 $(window).on("scroll", () => {
   line.forEach(function (a, idx) {
     let length = a.getTotalLength();
     // console.log(length);
-    if (scrollY > 3200) {
+    if (scrollY > 3000) {
       a.style.strokeDasharray = length;
       a.style.strokeDashoffset = 0;
     } else {
