@@ -13,7 +13,7 @@ window.addEventListener("load", function () {
   setTimeout(moveImagesToCenter, 100);
 });
 
-// menu btn
+//  메뉴 스크롤 (지우면x)
 $(document).ready(function () {
   $(".menu_wrapper_nav a").on("click", (e) => {
     e.preventDefault();
@@ -21,4 +21,11 @@ $(document).ready(function () {
     $(".menu_wrapper_list").toggleClass("hide");
     $(".menu_wrapper_box").toggleClass("color");
   });
+});
+
+var swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-next",
+    prevEl: ".swiper-prev",
+  },
 });

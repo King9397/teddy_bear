@@ -126,6 +126,11 @@ main .arrow1 {
   left: 13%;
   transform: rotate(21deg);
 }
+main .arrow1 path,
+main .arrow2 path,
+main .arrow3 path {
+  transition: 1s;
+}
 main .arrow2 {
   top: 15%;
   right: 10%;
@@ -133,7 +138,7 @@ main .arrow2 {
 }
 main .arrow3 {
   left: 45%;
-  bottom: 10%;
+  bottom: -4%;
   transform: rotate(5deg);
 }
 /*--- more ---*/
@@ -254,6 +259,11 @@ main .together_wrapper .contentBox .bear2 {
   width: 400px;
   bottom: 5%;
   left: 2%;
+}
+main .together_wrapper .contentBox .box_deco1,
+main .together_wrapper .contentBox .box_deco2,
+main .together_wrapper .contentBox .box_deco3,
+main .together_wrapper .contentBox .box_deco4 {
 }
 /*----- footer ------*/
 
