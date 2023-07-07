@@ -164,7 +164,7 @@ main .about {
   position: relative;
 }
 main .about > p {
-  font-family: "Gyeonggi";
+  font-family: 'Gyeonggi';
   text-align: center;
   font-size: 54px;
   line-height: 115%;
@@ -224,7 +224,7 @@ main .location .location_theme .location_txt p:nth-child(2) {
   position: relative;
 }
 main .location .location_theme .location_txt p:nth-child(2):before {
-  content: "";
+  content: '';
   background-color: var(--color-pink);
   width: 5px;
   height: 33px;
@@ -237,10 +237,9 @@ main .location .location_theme .location_txt p:nth-child(2):before {
 main .location .swiper {
   height: 100%;
   margin-left: 150px;
-
 }
 
-main .location .swiper .swiper-wrapper .swiper-slide{
+main .location .swiper .swiper-wrapper .swiper-slide {
   width: 100%;
   padding-top: 40px;
   display: flex;
@@ -248,7 +247,6 @@ main .location .swiper .swiper-wrapper .swiper-slide{
   justify-content: center;
   align-items: flex-start;
   margin-right: 20px;
-  
 }
 
 main .swiper .swiper-wrapper .swiper-slide img {
@@ -256,7 +254,7 @@ main .swiper .swiper-wrapper .swiper-slide img {
   width: 950px;
   height: 550px;
   object-fit: cover;
-} 
+}
 main .location .swiper .swiper-wrapper .swiper-slide .box_txt {
   padding-top: 30px;
 }
