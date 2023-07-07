@@ -16,7 +16,7 @@ window.addEventListener("load", function () {
 
 //세번째 섹션 자동 슬라이더
 const mySwiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
+  spaceBetween: 10,
   // centeredSlides: true,
   slidesPerView: "1.5",
   navigation: {
