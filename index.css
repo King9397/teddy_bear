@@ -96,7 +96,6 @@ main .about > p {
   text-align: center;
   font-size: 54px;
   line-height: 115%;
-  
 }
 main .about .btn {
   position: absolute;
@@ -126,20 +125,19 @@ main .about .btn:after {
 main .about .btn:hover {
   color: black;
   transition: linear 2s;
-  
 }
 main .about .btn:hover:after {
   transition: height 0.5s linear;
   height: 100%;
 }
-
-main .about .btn p{
+/*--- 버튼 클릭 범주 확장 "준현" ---*/
+main .about .btn p {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-main .about .btn p a{
+main .about .btn p a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,10 +166,13 @@ main .location .txt p {
   font-size: var(--size-font22);
 }
 main .location .location_theme {
-  justify-content: space-around;
-  gap: 4.375rem;
+  justify-content: center;
+  gap: 20px;
   align-items: center;
   margin-bottom: 30px;
+}
+main .location .location_theme svg path {
+  transition: 1s;
 }
 main .location .location_theme .title2 {
   font-size: 86px;
@@ -193,7 +194,7 @@ main .location .location_theme .location_txt p:nth-child(2) {
   align-items: center;
   justify-content: flex-start;
   overflow: hidden;
-  height: 66px;
+  height: 46px;
 }
 
 main .location .location_theme .location_txt p:nth-child(2):before {
@@ -206,13 +207,12 @@ main .location .location_theme .location_txt p:nth-child(2):before {
   top: 50%;
   transform: translate(-50%, -50%);
   transition: width 0.5s ease-in-out;
-  
 }
-main .location .location_theme .location_txt p:nth-child(2):hover:before{
+main .location .location_theme .location_txt p:nth-child(2):hover:before {
   width: 180px;
 }
 
-main .location .location_theme .location_txt p a{
+main .location .location_theme .location_txt p a {
   display: flex;
   align-items: center;
   width: 100%;
@@ -282,8 +282,41 @@ main
 }
 
 /*--- main 네 번째 섹션(장식 페이지) ---*/
+/* :c 이중스크롤 css 수정입니다 */
 main .animation {
   position: relative;
+}
+main .zookeeper_wrapper {
+  height: 2000px;
+  position: sticky;
+  top: 120px;
+}
+main .animation .zookeeper {
+  height: 100vh;
+  background-color: #f0f0f0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+main .animation .scroll_bar {
+  position: absolute;
+  top: 350px;
+  right: 20px;
+  background-color: #fff;
+  width: 5px;
+  height: 30vh;
+  z-index: 9999;
+  transition: 0.000001s;
+  overflow: hidden;
+}
+main .animation .scroll_bar .scroll_bar_black {
+  position: absolute;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #000;
+  transition: 0.1s;
 }
 main .animation .zookeeper p {
   font-family: var(--ko-font);
@@ -293,21 +326,21 @@ main .animation .zookeeper p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-main .animation .zookeeper {
-  height: 800px;
-  background-color: #f0f0f0;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+main .animation .where_wrapper {
+  height: 2000px;
 }
 main .animation .where {
-  height: 800px;
+  position: sticky;
+  top: 120px;
+  height: 100vh;
   text-align: center;
   background-color: #ffad99;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 999;
 }
+/*--- svg 추가 "준현" ---*/
 main .animation .where svg path {
   transition: 1s;
 }
@@ -358,18 +391,25 @@ main .animation .where .btn:hover:after {
   transition: height 0.5s linear;
   height: 100%;
 }
-main .animation .where .btn p{
+/*--- 버튼 클릭 범주 확장 "준현" ---*/
+main .animation .where .btn p {
   display: block;
   width: 100%;
   height: 100%;
 }
-
-main .animation .where .btn p a{
+main .animation .where .btn p a {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
+}
+/*--c: 연정 gif 추가 --*/
+main .animation .where .where-ani {
+  width: 1200px;
+  height: 400px;
+  background: url(./images/zookeeper-ani.gif) no-repeat 50% /70%;
+  margin: 0 auto;
 }
 /*--- main 다섯 번째 섹션(Teddy Bear 페이지) ---*/
 main .bigfont {
@@ -507,8 +547,8 @@ main .schedule .btn:hover:after {
   transition: height 0.5s linear;
   height: 100%;
 }
-
-main .schedule .btn p{
+/*--- 버튼 클릭 범주 확장 "준현" ---*/
+main .schedule .btn p {
   display: block;
   width: 100%;
   height: 100%;
@@ -543,21 +583,23 @@ footer .flex .btn:after {
   z-index: -1;
   top: 0;
 }
+
 footer .flex .btn:hover {
   color: black;
   transition: linear 2s;
 }
+/*--- 버튼 클릭 범주 확장 "준현" ---*/
 footer .flex .btn:hover:after {
   transition: height 0.5s linear;
   height: 100%;
 }
-footer .flex .btn p{
+footer .flex .btn p {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-footer .flex .btn p a{
+footer .flex .btn p a {
   display: flex;
   align-items: center;
   justify-content: center;

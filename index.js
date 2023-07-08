@@ -19,6 +19,7 @@ const mySwiper = new Swiper(".mySwiper", {
   slidesPerView: "1.8",
   slidesOffsetBefore: 180,
   slidesOffsetAfter: -100,
+
   autoplay: {
     delay: 2000,
     disableOnInteraction: false,
@@ -32,6 +33,21 @@ $(document).ready(function () {
     $(".menu_wrapper_list").slideToggle();
     $(".menu_wrapper_list").toggleClass("hide");
     $(".menu_wrapper_box").toggleClass("color");
+  });
+});
+
+// 추가 한 부분입니다. -준현
+let arrow = document.querySelectorAll(".location_theme>svg path");
+$(window).on("scroll", () => {
+  arrow.forEach(function (a, idx) {
+    let length = a.getTotalLength();
+    // console.log(length);
+    if (scrollY > 1690) {
+      a.style.strokeDasharray = length;
+      a.style.strokeDashoffset = 0;
+    } else {
+      a.style.strokeDashoffset = length;
+    }
   });
 });
 
@@ -75,4 +91,23 @@ $(window).on("scroll", () => {
       maxWidth: `100%`,
     });
   }
+});
+
+//  이중 스크롤 //:c 이중스크롤 수정입니다
+$(window).on("scroll", () => {
+  const aniTop = document.querySelector(".animation").offsetTop;
+  const aniHt = document.querySelector(".animation").clientHeight;
+  const whereHt = document.querySelector(".animation .where").clientHeight;
+  console.log(scrollY);
+  console.log(scrollY + aniHt - whereHt);
+  if (scrollY >= aniTop && scrollY <= aniTop + aniHt - whereHt) {
+    $(".animation .scroll_bar").css({
+      transform: `translateY(${scrollY - aniTop + 120}px)`,
+    });
+  }
+
+  $(".scroll_bar .scroll_bar_black").css({
+    height: `${((scrollY - aniTop) / (aniHt - whereHt)) * 100}%`,
+    maxHeight: `100%`,
+  });
 });

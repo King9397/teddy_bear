@@ -1,15 +1,15 @@
 // 핑크곰 떨어뜨리기
 const bearMove = document.querySelector(".unique_wrapper").clientHeight - 300;
 $(window).on("scroll", () => {
-  // console.log(scrollY);
+  console.log(scrollY);
   if (0 < scrollY && scrollY < bearMove) {
     $(".bear_wrapper").css({
       top: `30%`,
       transform: `translate(-50%, ${scrollY}px)`,
     });
   } else {
-    $(".bear_wrapper").css({
-      top: `10%`,
+    $('.bear_wrapper').css({
+      top: `10%`
     });
   }
   if (scrollY > bearMove) {
