@@ -248,13 +248,13 @@ main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img1 {
   background: url(./images/slide1.png) no-repeat;
 }
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img2 {
-  background: url(./images/slide1.png) no-repeat;
+  background: url(./images/slide2.png) no-repeat;
 }
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img3 {
-  background: url(./images/slide1.png) no-repeat;
+  background: url(./images/slide3.png) no-repeat;
 }
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img4 {
-  background: url(./images/slide1.png) no-repeat;
+  background: url(./images/slide4.png) no-repeat;
 }
 main .location .mySwiper .swiper-wrapper .swiper-slide .swiper_txt {
   padding-top: 30px;
@@ -408,7 +408,7 @@ main .animation .where .btn p a {
 main .animation .where .where-ani {
   width: 1200px;
   height: 400px;
-  background: url(./images/zookeeper-ani.gif) no-repeat 50% /70%;
+  background: url(./images/where-ani.gif) no-repeat 50% /70%;
   margin: 0 auto;
 }
 /*--- main 다섯 번째 섹션(Teddy Bear 페이지) ---*/

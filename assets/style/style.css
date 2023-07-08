@@ -153,7 +153,7 @@ header .menu_wrapper_list .nav_ani {
   width: 400px;
   height: 400px;
   background: url(../../images/nav_ani.png) no-repeat;
-  animation: nav_ani 17s steps(16, start) infinite;
+  animation: nav_ani 16s steps(16, start) infinite;
   position: absolute;
   top: 300px;
   right: 400px;
