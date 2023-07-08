@@ -11,20 +11,26 @@ window.addEventListener("load", function () {
     ear2.classList.add("move");
   }
   setTimeout(moveImagesToCenter, 100);
-  
 });
 
 //세번째 섹션 자동 슬라이더
+
 const mySwiper = new Swiper(".mySwiper", {
   spaceBetween: -220,
   slidesPerView: "1.8",
   slidesOffsetBefore: 180,
   slidesOffsetAfter: -100,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
+
+  pagination: {
+    el: "pagination_bullet",
+    // type: "bullets",
+    // clickable: true,
+
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
   },
- 
 });
 
 //  메뉴 스크롤 (지우면x)
@@ -38,8 +44,8 @@ $(document).ready(function () {
 });
 
 // 추가 한 부분입니다. -준현
-let arrow = document.querySelectorAll('.location_theme>svg path');
-$(window).on('scroll', () => {
+let arrow = document.querySelectorAll(".location_theme>svg path");
+$(window).on("scroll", () => {
   arrow.forEach(function (a, idx) {
     let length = a.getTotalLength();
     // console.log(length);
@@ -52,9 +58,9 @@ $(window).on('scroll', () => {
   });
 });
 
-
-let line = document.querySelectorAll('.where>svg path');
-$(window).on('scroll', () => {
+// svg
+let line = document.querySelectorAll(".where>svg path");
+$(window).on("scroll", () => {
   line.forEach(function (a, idx) {
     let length = a.getTotalLength();
     // console.log(length);
