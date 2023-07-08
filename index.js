@@ -14,7 +14,6 @@ window.addEventListener('load', function () {
 });
 
 //세번째 섹션 자동 슬라이더
-<<<<<<< HEAD
 const mySwiper = new Swiper(".mySwiper", {
   spaceBetween: -250,
   // centeredSlides: true,
@@ -25,15 +24,6 @@ const mySwiper = new Swiper(".mySwiper", {
     el: "pagination_bullet",
     // type: "bullets",
     // clickable: true,
-=======
-const mySwiper = new Swiper('.mySwiper', {
-  spaceBetween: 30,
-  // centeredSlides: true,
-  slidesPerView: '1.5',
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
->>>>>>> 2a37108bf4686ad4bbdb1b353dad1885df871229
   },
 });
 
