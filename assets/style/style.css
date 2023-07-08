@@ -150,24 +150,15 @@ header h1,
   letter-spacing: -5px;
 }
 header .menu_wrapper_list .nav_ani {
-  width: 400px;
-  height: 400px;
-  background: url(../../images/nav_ani.png) no-repeat;
-  animation: nav_ani 17s steps(16, start) infinite;
+  width: 500px;
+  height: 600px;
+  background: url(../../images/nav_ani.gif) no-repeat;
   position: absolute;
-  top: 300px;
+  top: 120px;
   right: 400px;
   transform: translateX(-50%)
 }
 
-@keyframes nav_ani {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: -6413px 0;
-  }
-}
 /* footer */
 footer {
   padding: 0 10%;

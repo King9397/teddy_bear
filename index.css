@@ -96,7 +96,6 @@ main .about > p {
   text-align: center;
   font-size: 54px;
   line-height: 115%;
-  
 }
 main .about .btn {
   position: absolute;
@@ -126,20 +125,19 @@ main .about .btn:after {
 main .about .btn:hover {
   color: black;
   transition: linear 2s;
-  
 }
 main .about .btn:hover:after {
   transition: height 0.5s linear;
   height: 100%;
 }
 /*--- 버튼 클릭 범주 확장 "준현" ---*/
-main .about .btn p{
+main .about .btn p {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-main .about .btn p a{
+main .about .btn p a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -209,13 +207,12 @@ main .location .location_theme .location_txt p:nth-child(2):before {
   top: 50%;
   transform: translate(-50%, -50%);
   transition: width 0.5s ease-in-out;
-  
 }
-main .location .location_theme .location_txt p:nth-child(2):hover:before{
+main .location .location_theme .location_txt p:nth-child(2):hover:before {
   width: 180px;
 }
 
-main .location .location_theme .location_txt p a{
+main .location .location_theme .location_txt p a {
   display: flex;
   align-items: center;
   width: 100%;
@@ -251,13 +248,13 @@ main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img1 {
   background: url(./images/slide1.png) no-repeat;
 }
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img2 {
-  background: url(./images/slide1.png) no-repeat;
+  background: url(./images/slide2.png) no-repeat;
 }
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img3 {
-  background: url(./images/slide1.png) no-repeat;
+  background: url(./images/slide3.png) no-repeat;
 }
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img4 {
-  background: url(./images/slide1.png) no-repeat;
+  background: url(./images/slide4.png) no-repeat;
 }
 main .location .mySwiper .swiper-wrapper .swiper-slide .swiper_txt {
   padding-top: 30px;
@@ -395,7 +392,6 @@ main .animation .where .btn:after {
   z-index: -1;
   top: 0;
 }
-
 main .animation .where .btn:hover {
   color: rgb(255, 255, 255);
   transition: linear 2s;
@@ -405,20 +401,26 @@ main .animation .where .btn:hover:after {
   height: 100%;
 }
 /*--- 버튼 클릭 범주 확장 "준현" ---*/
-main .animation .where .btn p{
+main .animation .where .btn p {
   display: block;
   width: 100%;
   height: 100%;
   opacity: 0;
   transition: 1s;
 }
-
-main .animation .where .btn p a{
+main .animation .where .btn p a {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
+}
+/*--c: 연정 gif 추가 --*/
+main .animation .where .where-ani {
+  width: 1200px;
+  height: 400px;
+  background: url(./images/where-ani.gif) no-repeat 50% /70%;
+  margin: 0 auto;
 }
 /*--- main 다섯 번째 섹션(Teddy Bear 페이지) ---*/
 main .bigfont {
@@ -557,7 +559,7 @@ main .schedule .btn:hover:after {
   height: 100%;
 }
 /*--- 버튼 클릭 범주 확장 "준현" ---*/
-main .schedule .btn p{
+main .schedule .btn p {
   display: block;
   width: 100%;
   height: 100%;
@@ -602,13 +604,13 @@ footer .flex .btn:hover:after {
   transition: height 0.5s linear;
   height: 100%;
 }
-footer .flex .btn p{
+footer .flex .btn p {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-footer .flex .btn p a{
+footer .flex .btn p a {
   display: flex;
   align-items: center;
   justify-content: center;

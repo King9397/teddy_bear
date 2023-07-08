@@ -208,7 +208,7 @@
   justify-content: center;
 }
 .processimg-wrapper .processimg-wrapper_img .processimg_img:nth-child(1) {
-  background: url(./images/about7.png) no-repeat 50% / 270px 270px;
+  background: url(./images/about1.png) no-repeat 50% / 270px 270px;
 }
 .processimg-wrapper .processimg-wrapper_img .processimg_img:nth-child(2) {
   background: url(./images/about02.png) no-repeat 50% / 270px 270px;
@@ -254,13 +254,13 @@
   font-size: 20.1px;
   line-height: 135%;
 }
-footer .site .flex .btn p{
+footer .site .flex .btn p {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-footer .site .flex .btn p a{
+footer .site .flex .btn p a {
   display: flex;
   align-items: center;
   justify-content: center;

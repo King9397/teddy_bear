@@ -37,21 +37,14 @@ const bearRemove = function () {
 setInterval(bearRemove, 6000);
 //세번째 섹션 자동 슬라이더
 const mySwiper = new Swiper(".mySwiper", {
-  spaceBetween: -220,
+  spaceBetween: -180,
   slidesPerView: "1.8",
   slidesOffsetBefore: 180,
   slidesOffsetAfter: -100,
 
-  pagination: {
-    el: "pagination_bullet",
-    // type: "bullets",
-    // clickable: true,
-
-
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
   },
 });
 
@@ -76,7 +69,7 @@ $(window).on("scroll", () => {
   line.forEach(function (a, idx) {
     let length = a.getTotalLength();
     // console.log(length);
-    if (scrollY > 3000) {
+    if (scrollY > 5050) {
       a.style.strokeDasharray = length;
       a.style.strokeDashoffset = 0;
     } else {
@@ -90,7 +83,7 @@ $(window).on("scroll", () => {
   line2.forEach(function (a, idx) {
     let length = a.getTotalLength();
     // console.log(length);
-    if (scrollY > 15000) {
+    if (scrollY > 7350) {
       a.style.strokeDasharray = length;
       a.style.strokeDashoffset = 0;
     } else {
@@ -125,9 +118,9 @@ $(window).on('scroll', () => {
   console.log(scrollY)
   console.log(scrollY + aniHt - whereHt)
   if (scrollY >= aniTop && scrollY <= aniTop + aniHt - whereHt) {
-    $('.animation .scroll_bar').css({
-      transform: `translateY(${scrollY - aniTop + 120}px)`
-    })
+    $(".animation .scroll_bar").css({
+      transform: `translateY(${scrollY - aniTop + 120}px)`,
+    });
   }
 
   $('.scroll_bar .scroll_bar_black').css({
