@@ -1,20 +1,20 @@
 // 첫번째 섹션 곰돌이
-window.addEventListener('load', function () {
-  var ear1 = document.querySelector('.welcome .container .ear1');
-  var face = document.querySelector('.welcome .container .face');
-  var ear2 = document.querySelector('.welcome .container .ear2');
+window.addEventListener("load", function () {
+  var ear1 = document.querySelector(".welcome .container .ear1");
+  var face = document.querySelector(".welcome .container .face");
+  var ear2 = document.querySelector(".welcome .container .ear2");
 
   // 이미지 요소들을 모이는 값
   function moveImagesToCenter() {
-    ear1.classList.add('move');
-    face.classList.add('move');
-    ear2.classList.add('move');
+    ear1.classList.add("move");
+    face.classList.add("move");
+    ear2.classList.add("move");
   }
   setTimeout(moveImagesToCenter, 100);
 });
 
 //세번째 섹션 자동 슬라이더
-<<<<<<< HEAD
+
 const mySwiper = new Swiper(".mySwiper", {
   spaceBetween: -250,
   // centeredSlides: true,
@@ -25,30 +25,21 @@ const mySwiper = new Swiper(".mySwiper", {
     el: "pagination_bullet",
     // type: "bullets",
     // clickable: true,
-=======
-const mySwiper = new Swiper('.mySwiper', {
-  spaceBetween: 30,
-  // centeredSlides: true,
-  slidesPerView: '1.5',
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
->>>>>>> 2a37108bf4686ad4bbdb1b353dad1885df871229
   },
 });
 
 //  메뉴 스크롤 (지우면x)
 $(document).ready(function () {
-  $('.menu_wrapper_nav a').on('click', (e) => {
+  $(".menu_wrapper_nav a").on("click", (e) => {
     e.preventDefault();
-    $('.menu_wrapper_list').slideToggle();
-    $('.menu_wrapper_list').toggleClass('hide');
-    $('.menu_wrapper_box').toggleClass('color');
+    $(".menu_wrapper_list").slideToggle();
+    $(".menu_wrapper_list").toggleClass("hide");
+    $(".menu_wrapper_box").toggleClass("color");
   });
 });
 // svg
-let line = document.querySelectorAll('.where>svg path');
-$(window).on('scroll', () => {
+let line = document.querySelectorAll(".where>svg path");
+$(window).on("scroll", () => {
   line.forEach(function (a, idx) {
     let length = a.getTotalLength();
     // console.log(length);
@@ -61,8 +52,8 @@ $(window).on('scroll', () => {
   });
 });
 
-let line2 = document.querySelectorAll('.circle path');
-$(window).on('scroll', () => {
+let line2 = document.querySelectorAll(".circle path");
+$(window).on("scroll", () => {
   line2.forEach(function (a, idx) {
     let length = a.getTotalLength();
     // console.log(length);
@@ -75,13 +66,13 @@ $(window).on('scroll', () => {
   });
 });
 
-$(window).on('scroll', () => {
-  const teddyTop = document.querySelector('.bigfont').offsetTop;
+$(window).on("scroll", () => {
+  const teddyTop = document.querySelector(".bigfont").offsetTop;
   const teddyHeight =
-    document.querySelector('.bigfont').clientHeight -
+    document.querySelector(".bigfont").clientHeight -
     document.documentElement.clientHeight;
   if (scrollY > teddyTop) {
-    $('.bigfont .teddy_wrapper .teddy_dark').css({
+    $(".bigfont .teddy_wrapper .teddy_dark").css({
       width: `${((scrollY - teddyTop) / teddyHeight) * 100}%`,
       maxWidth: `100%`,
     });

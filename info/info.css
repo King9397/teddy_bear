@@ -75,15 +75,33 @@
   font-size: var(--size-font22);
 }
 /*- swiper-img -*/
-.mySwiper .swiper-wrapper .swiper_img1,
-.mySwiper .swiper-wrapper .swiper_img2,
-.mySwiper .swiper-wrapper .swiper_img3,
+.mySwiper .swiper-wrapper .swiper_img1 {
+  width: 620px;
+  height: 786px;
+  background: var(--color-pink) url(./images/myswiper1.png) no-repeat 100% / 96%
+    94%;
+  margin: 107px 0;
+}
+.mySwiper .swiper-wrapper .swiper_img2 {
+  width: 620px;
+  height: 786px;
+  background: var(--color-pink) url(./images/myswiper2.png) no-repeat 100% / 96%
+    94%;
+  margin: 107px 0;
+}
+.mySwiper .swiper-wrapper .swiper_img3 {
+  width: 620px;
+  height: 786px;
+  background: var(--color-pink) url(./images/myswiper3.png) no-repeat 100% / 96%
+    94%;
+  margin: 107px 0;
+}
 .mySwiper .swiper-wrapper .swiper_img4 {
   width: 620px;
   height: 786px;
-  background: var(--color-pink) url(./images/teddybear.jpg) no-repeat 100% / 96%
+  background: var(--color-pink) url(./images/myswiper4.png) no-repeat 100% / 96%
     94%;
-  margin: 106px 0;
+  margin: 107px 0;
 }
 
 /*--- china Museum ---*/
@@ -101,17 +119,17 @@
 .china_wrapper .china_wrapper_inner .wrapper_inner_chengdu .inner_chengdu_img1 {
   width: 1207px;
   height: 482px;
-  background: url(./images/teddybear.jpg) no-repeat 100% / cover;
+  background: url(./images/china1.png) no-repeat 100% / cover;
 }
 .china_wrapper .china_wrapper_inner .wrapper_inner_chengdu .inner_chengdu_img2 {
   width: 580px;
   height: 482px;
-  background: url(./images/teddybear.jpg) no-repeat 100% / cover;
+  background: url(./images/china2.png) no-repeat 100% / cover;
 }
 .china_wrapper .inner_chengdu_img3 {
   width: 1827px;
   height: 400px;
-  background: url(./images/teddybear.jpg) no-repeat 100% / cover;
+  background: url(./images/china3.png) no-repeat 100% / cover;
   margin: 8rem 0;
 }
 
