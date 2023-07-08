@@ -14,7 +14,7 @@ const mySwiper = new Swiper(".mySwiper", {
 });
 
 // 이용안내 svg
-const arrow_left = document.querySelectorAll("svg path");
+const arrow_left = document.querySelectorAll("charge_wrapper_txt1>svg path");
 $(window).on("scroll", () => {
   arrow_left.forEach(function (a, idx) {
     let length = a.getTotalLength();
