@@ -24,7 +24,13 @@ const mySwiper = new Swiper(".mySwiper", {
     disableOnInteraction: false,
   },
   pagination: {
+<<<<<<< HEAD
     type: "bullets",
+=======
+    el: "pagination_bullet",
+    // type: "bullets",
+    // clickable: true,
+>>>>>>> f9e1b8c14eb0c2be4efa21c85e15f341676a379d
   },
 });
 

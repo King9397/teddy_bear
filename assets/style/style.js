@@ -15,6 +15,7 @@ $(document).ready(function () {
   });
 });
 
+
 var swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-next",
