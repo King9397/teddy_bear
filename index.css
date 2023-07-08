@@ -96,6 +96,7 @@ main .about > p {
   text-align: center;
   font-size: 54px;
   line-height: 115%;
+  
 }
 main .about .btn {
   position: absolute;
@@ -125,9 +126,24 @@ main .about .btn:after {
 main .about .btn:hover {
   color: black;
   transition: linear 2s;
+  
 }
 main .about .btn:hover:after {
   transition: height 0.5s linear;
+  height: 100%;
+}
+
+main .about .btn p{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+main .about .btn p a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   height: 100%;
 }
 main .about .keep {
@@ -319,7 +335,19 @@ main .animation .where .btn:hover:after {
   transition: height 0.5s linear;
   height: 100%;
 }
+main .animation .where .btn p{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
+main .animation .where .btn p a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
 /*--- main 다섯 번째 섹션(Teddy Bear 페이지) ---*/
 main .bigfont {
   width: 100%;
@@ -456,9 +484,21 @@ main .schedule .btn:hover:after {
   transition: height 0.5s linear;
   height: 100%;
 }
+
+main .schedule .btn p{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 main .schedule .btn a {
   font-family: var(--ko-font);
   font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 /*----- footer ------*/
 footer .flex .btn {
@@ -486,5 +526,18 @@ footer .flex .btn:hover {
 }
 footer .flex .btn:hover:after {
   transition: height 0.5s linear;
+  height: 100%;
+}
+footer .flex .btn p{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+footer .flex .btn p a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   height: 100%;
 }
