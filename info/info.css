@@ -11,9 +11,10 @@
 }
 /*- title-img -*/
 .info_wrapper .info_wrapper_img {
-  height: 440px;
-  background: url(./images/titleChu.gif) no-repeat 50%;
-  margin-bottom: 10rem;
+  width: 1000px;
+  height: 400px;
+  background: url(./images/title_img.gif) no-repeat;
+  margin: 10rem auto;
 }
 
 /*--- swiper ---*/
