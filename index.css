@@ -96,6 +96,7 @@ main .about > p {
   text-align: center;
   font-size: 54px;
   line-height: 115%;
+  
 }
 main .about .btn {
   position: absolute;
@@ -110,7 +111,7 @@ main .about .btn {
   z-index: 1;
 }
 main .about .btn:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: auto;
   border-radius: 3.125rem;
@@ -125,9 +126,24 @@ main .about .btn:after {
 main .about .btn:hover {
   color: black;
   transition: linear 2s;
+  
 }
 main .about .btn:hover:after {
   transition: height 0.5s linear;
+  height: 100%;
+}
+/*--- 버튼 클릭 범주 확장 "준현" ---*/
+main .about .btn p{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+main .about .btn p a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   height: 100%;
 }
 main .about .keep {
@@ -147,14 +163,18 @@ main .location {
   overflow: hidden;
 }
 main .location .txt p {
-  margin-left: 9.5rem;
+  margin: 0 0 50px 180px;
   font-family: var(--ko-font);
-  font-size: 21px;
+  font-size: var(--size-font22);
 }
 main .location .location_theme {
-  justify-content: space-around;
-  gap: 4.375rem;
+  justify-content: center;
+  gap: 20px;
   align-items: center;
+  margin-bottom: 30px;
+}
+main .location .location_theme svg path {
+  transition: 1s;
 }
 main .location .location_theme .title2 {
   font-size: 86px;
@@ -172,9 +192,15 @@ main .location .location_theme .location_txt p:nth-child(2) {
   padding-left: 10px;
   font-weight: 900;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  height: 46px;
 }
+
 main .location .location_theme .location_txt p:nth-child(2):before {
-  content: '';
+  content: "";
   background-color: var(--color-pink);
   width: 5px;
   height: 33px;
@@ -182,24 +208,29 @@ main .location .location_theme .location_txt p:nth-child(2):before {
   left: 0;
   top: 50%;
   transform: translate(-50%, -50%);
+  transition: width 0.5s ease-in-out;
+  
+}
+main .location .location_theme .location_txt p:nth-child(2):hover:before{
+  width: 180px;
 }
 
+main .location .location_theme .location_txt p a{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
 /*--- swiper ---*/
 main .location .mySwiper {
-  height: 100vh;
+  height: 60vh;
   overflow: hidden;
 }
 main .location .mySwiper .swiper-wrapper {
   width: 400%;
 }
-
-/* main .mySwiper .swiper-wrapper .swiper-slide { */
-
-main .location .swiper {
-  height: 100%;
-  margin-left: 150px;
-}
-main .location .swiper .swiper-wrapper .swiper-slide {
+main .location .mySwiper .swiper-wrapper .swiper-slide {
   width: 100%;
 }
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box {
@@ -227,16 +258,27 @@ main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img3 {
 }
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img4 {
   background: url(./images/slide1.png) no-repeat;
-  object-fit: cover;
 }
-main .location .swiper .swiper-wrapper .swiper-slide .box_txt {
+main .location .mySwiper .swiper-wrapper .swiper-slide .swiper_txt {
   padding-top: 30px;
 }
-main .location .swiper .swiper-wrapper .swiper-slide .box_txt p:nth-child(1) {
+main
+  .location
+  .mySwiper
+  .swiper-wrapper
+  .swiper-slide
+  .swiper_txt
+  p:nth-child(1) {
   font-family: var(--ko-font);
   font-size: 33px;
 }
-main .location .swiper .swiper-wrapper .swiper-slide .box_txt p:nth-child(2) {
+main
+  .location
+  .mySwiper
+  .swiper-wrapper
+  .swiper-slide
+  .swiper_txt
+  p:nth-child(2) {
   margin-top: 15px;
   font-family: var(--ko-font);
   font-size: 21px;
@@ -301,6 +343,7 @@ main .animation .where {
   align-items: center;
   z-index: 999;
 }
+/*--- svg 추가 "준현" ---*/
 main .animation .where svg path {
   transition: 1s;
 }
@@ -331,7 +374,7 @@ main .animation .where .btn {
   z-index: 1;
 }
 main .animation .where .btn:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: auto;
   border-radius: 3.125rem;
@@ -343,6 +386,7 @@ main .animation .where .btn:after {
   z-index: -1;
   top: 0;
 }
+
 main .animation .where .btn:hover {
   color: rgb(255, 255, 255);
   transition: linear 2s;
@@ -351,7 +395,20 @@ main .animation .where .btn:hover:after {
   transition: height 0.5s linear;
   height: 100%;
 }
+/*--- 버튼 클릭 범주 확장 "준현" ---*/
+main .animation .where .btn p{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
+main .animation .where .btn p a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
 /*--- main 다섯 번째 섹션(Teddy Bear 페이지) ---*/
 main .bigfont {
   width: 100%;
@@ -468,7 +525,7 @@ main .schedule .btn {
   z-index: 1;
 }
 main .schedule .btn:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: auto;
   border-radius: 3.125rem;
@@ -488,9 +545,21 @@ main .schedule .btn:hover:after {
   transition: height 0.5s linear;
   height: 100%;
 }
+/*--- 버튼 클릭 범주 확장 "준현" ---*/
+main .schedule .btn p{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 main .schedule .btn a {
   font-family: var(--ko-font);
   font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 /*----- footer ------*/
 footer .flex .btn {
@@ -500,7 +569,7 @@ footer .flex .btn {
 }
 
 footer .flex .btn:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: auto;
   border-radius: 3.125rem;
@@ -512,11 +581,26 @@ footer .flex .btn:after {
   z-index: -1;
   top: 0;
 }
+
 footer .flex .btn:hover {
   color: black;
   transition: linear 2s;
 }
+/*--- 버튼 클릭 범주 확장 "준현" ---*/
 footer .flex .btn:hover:after {
   transition: height 0.5s linear;
+  height: 100%;
+}
+footer .flex .btn p{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+footer .flex .btn p a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   height: 100%;
 }
