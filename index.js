@@ -1,4 +1,4 @@
-// 첫번째 섹션 곰돌이
+//첫번째 섹션 곰돌이
 window.addEventListener("load", function () {
   var ear1 = document.querySelector(".welcome .container .ear1");
   var face = document.querySelector(".welcome .container .face");
@@ -13,6 +13,28 @@ window.addEventListener("load", function () {
   setTimeout(moveImagesToCenter, 100);
 });
 
+const bearLoading = function () {
+      var ear1 = document.querySelector(".welcome .container .ear1");
+      var face = document.querySelector(".welcome .container .face");
+      var ear2 = document.querySelector(".welcome .container .ear2");
+      ear1.classList.add("move");
+      face.classList.add("move");
+      ear2.classList.add("move");
+}
+
+setInterval(bearLoading, 3000);
+
+const bearRemove = function () {
+  var ear1 = document.querySelector(".welcome .container .ear1");
+  var face = document.querySelector(".welcome .container .face");
+  var ear2 = document.querySelector(".welcome .container .ear2");
+  console.log('ddd')
+  ear1.classList.remove("move");
+  face.classList.remove("move");
+  ear2.classList.remove("move");
+}
+
+setInterval(bearRemove, 6000);
 //세번째 섹션 자동 슬라이더
 const mySwiper = new Swiper(".mySwiper", {
   spaceBetween: -220,
@@ -31,16 +53,6 @@ const mySwiper = new Swiper(".mySwiper", {
       disableOnInteraction: false,
     },
   },
-});
-
-//  메뉴 스크롤 (지우면x)
-$(document).ready(function () {
-  $(".menu_wrapper_nav a").on("click", (e) => {
-    e.preventDefault();
-    $(".menu_wrapper_list").slideToggle();
-    $(".menu_wrapper_list").toggleClass("hide");
-    $(".menu_wrapper_box").toggleClass("color");
-  });
 });
 
 // 추가 한 부분입니다. -준현
@@ -78,7 +90,7 @@ $(window).on("scroll", () => {
   line2.forEach(function (a, idx) {
     let length = a.getTotalLength();
     // console.log(length);
-    if (scrollY > 4800) {
+    if (scrollY > 15000) {
       a.style.strokeDasharray = length;
       a.style.strokeDashoffset = 0;
     } else {
@@ -97,12 +109,17 @@ $(window).on("scroll", () => {
       width: `${((scrollY - teddyTop) / teddyHeight) * 100}%`,
       maxWidth: `100%`,
     });
+  } else {
+    $(".bigfont .teddy_wrapper .teddy_dark").css({
+      width: `0%`,
+    });
   }
 });
 
 //  이중 스크롤 //:c 이중스크롤 수정입니다
 $(window).on('scroll', () => {
   const aniTop = document.querySelector('.animation').offsetTop;
+  const whereTop = document.querySelector('.animation .where_wrapper').offsetTop;
   const aniHt = document.querySelector('.animation').clientHeight
   const whereHt = document.querySelector('.animation .where').clientHeight;
   console.log(scrollY)
@@ -117,4 +134,36 @@ $(window).on('scroll', () => {
     height: `${(scrollY - aniTop) / (aniHt - whereHt)  * 100}%`,
     maxHeight: `100%`
   })
+
+  if (scrollY >= aniTop) {
+    $('.zookeeper h2').css({
+      opacity : 1,
+      transform: `translateY(0)`
+    })
+  } else {
+    $('.zookeeper h2').css({
+      opacity : 0,
+      transform: `translateY(100px)`,
+    })
+  }
+  if (scrollY >= (aniTop + whereTop)) {
+    $('.where p').css({
+      opacity : 1,
+      transform: `translateY(0)`,
+    })
+    $('.where .btn').css({
+      opacity : 1,
+      transform: `translateY(0)`,
+    })
+  } else {
+    $('.where p').css({
+      opacity : 0,
+      transform: `translateY(100px)`,
+    })
+    $('.where .btn').css({
+      opacity : 0,
+      transform: `translateY(100px)`,
+    })
+  }
+
 })
