@@ -14,7 +14,6 @@ window.addEventListener("load", function () {
 });
 
 //세번째 섹션 자동 슬라이더
-
 const mySwiper = new Swiper(".mySwiper", {
   spaceBetween: -180,
   slidesPerView: "1.8",
@@ -92,4 +91,23 @@ $(window).on("scroll", () => {
       maxWidth: `100%`,
     });
   }
+});
+
+//  이중 스크롤 //:c 이중스크롤 수정입니다
+$(window).on("scroll", () => {
+  const aniTop = document.querySelector(".animation").offsetTop;
+  const aniHt = document.querySelector(".animation").clientHeight;
+  const whereHt = document.querySelector(".animation .where").clientHeight;
+  console.log(scrollY);
+  console.log(scrollY + aniHt - whereHt);
+  if (scrollY >= aniTop && scrollY <= aniTop + aniHt - whereHt) {
+    $(".animation .scroll_bar").css({
+      transform: `translateY(${scrollY - aniTop + 120}px)`,
+    });
+  }
+
+  $(".scroll_bar .scroll_bar_black").css({
+    height: `${((scrollY - aniTop) / (aniHt - whereHt)) * 100}%`,
+    maxHeight: `100%`,
+  });
 });

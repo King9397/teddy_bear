@@ -6,19 +6,11 @@ $(document).ready(function () {
     $(".menu_wrapper_list").toggleClass("hide");
   });
   $(window).on("scroll", () => {
-    console.log(scrollY);
+    // console.log(scrollY);
     if (scrollY > 200) {
       $("header").css({ backgroundColor: "#fff" });
     } else {
       $("header").css({ backgroundColor: "transparent" });
     }
   });
-});
-
-
-var swiper = new Swiper(".mySwiper", {
-  navigation: {
-    nextEl: ".swiper-next",
-    prevEl: ".swiper-prev",
-  },
 });
