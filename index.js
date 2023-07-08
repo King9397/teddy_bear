@@ -15,22 +15,13 @@ window.addEventListener("load", function () {
 
 //세번째 섹션 자동 슬라이더
 const mySwiper = new Swiper(".mySwiper", {
-  spaceBetween: -220,
+  spaceBetween: -180,
   slidesPerView: "1.8",
   slidesOffsetBefore: 180,
   slidesOffsetAfter: -100,
   autoplay: {
     delay: 2000,
     disableOnInteraction: false,
-  },
-  pagination: {
-<<<<<<< HEAD
-    type: "bullets",
-=======
-    el: "pagination_bullet",
-    // type: "bullets",
-    // clickable: true,
->>>>>>> f9e1b8c14eb0c2be4efa21c85e15f341676a379d
   },
 });
 
