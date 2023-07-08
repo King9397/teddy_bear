@@ -11,10 +11,10 @@
   width: 500px;
   height: 400px;
   background: url(./images/ani2.png) no-repeat;
-  animation: ani 5s steps(12, start) infinite;
+  animation: about_ani 5s steps(12, start) infinite;
   margin: 180px auto;
 }
-@keyframes ani {
+@keyframes about_ani {
   0% {
     background-position: 0 0;
   }
