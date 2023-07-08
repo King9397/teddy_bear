@@ -14,7 +14,6 @@ window.addEventListener('load', function () {
 });
 
 //세번째 섹션 자동 슬라이더
-<<<<<<< HEAD
 const mySwiper = new Swiper(".mySwiper", {
   spaceBetween: -250,
   // centeredSlides: true,
@@ -25,15 +24,6 @@ const mySwiper = new Swiper(".mySwiper", {
     el: "pagination_bullet",
     // type: "bullets",
     // clickable: true,
-=======
-const mySwiper = new Swiper('.mySwiper', {
-  spaceBetween: 30,
-  // centeredSlides: true,
-  slidesPerView: '1.5',
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
->>>>>>> 2a37108bf4686ad4bbdb1b353dad1885df871229
   },
 });
 
@@ -87,3 +77,22 @@ $(window).on('scroll', () => {
     });
   }
 });
+
+//  이중 스크롤 //:c 이중스크롤 수정입니다
+$(window).on('scroll', () => {
+  const aniTop = document.querySelector('.animation').offsetTop;
+  const aniHt = document.querySelector('.animation').clientHeight
+  const whereHt = document.querySelector('.animation .where').clientHeight;
+  console.log(scrollY)
+  console.log(scrollY + aniHt - whereHt)
+  if (scrollY >= aniTop && scrollY <= aniTop + aniHt - whereHt) {
+    $('.animation .scroll_bar').css({
+      transform: `translateY(${scrollY - aniTop + 120}px)`
+    })
+  }
+
+  $('.scroll_bar .scroll_bar_black').css({
+    height: `${(scrollY - aniTop) / (aniHt - whereHt)  * 100}%`,
+    maxHeight: `100%`
+  })
+})

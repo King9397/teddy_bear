@@ -243,8 +243,41 @@ main .location .swiper .swiper-wrapper .swiper-slide .box_txt p:nth-child(2) {
 }
 
 /*--- main 네 번째 섹션(장식 페이지) ---*/
+/* :c 이중스크롤 css 수정입니다 */
 main .animation {
   position: relative;
+}
+main .zookeeper_wrapper {
+  height: 2000px;
+  position: sticky;
+  top: 120px;
+}
+main .animation .zookeeper {
+  height: 100vh;
+  background-color: #f0f0f0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+main .animation .scroll_bar {
+  position: absolute;
+  top: 350px;
+  right: 20px;
+  background-color: #fff;
+  width: 5px;
+  height: 30vh;
+  z-index: 9999;
+  transition: 0.000001s;
+  overflow: hidden;
+}
+main .animation .scroll_bar .scroll_bar_black {
+  position: absolute;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #000;
+  transition: 0.1s;
 }
 main .animation .zookeeper p {
   font-family: var(--ko-font);
@@ -254,20 +287,19 @@ main .animation .zookeeper p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-main .animation .zookeeper {
-  height: 800px;
-  background-color: #f0f0f0;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+main .animation .where_wrapper {
+  height: 2000px;
 }
 main .animation .where {
-  height: 800px;
+  position: sticky;
+  top: 120px;
+  height: 100vh;
   text-align: center;
   background-color: #ffad99;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 999;
 }
 main .animation .where svg path {
   transition: 1s;

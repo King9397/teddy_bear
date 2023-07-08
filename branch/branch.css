@@ -27,9 +27,12 @@ main .bear_wrapper {
   position: absolute;
   left: 50%;
   top: 10%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
   z-index: -1;
-  transition: top 1s;
+  transition: 1s;
+}
+main:hover .bear_wrapper {
+  top: 10%;
 }
 main .bear_wrapper .bear1 {
   transition: 1s;
@@ -262,11 +265,6 @@ main .together_wrapper .contentBox .bear2 {
   width: 400px;
   bottom: 5%;
   left: 2%;
-}
-main .together_wrapper .contentBox .box_deco1,
-main .together_wrapper .contentBox .box_deco2,
-main .together_wrapper .contentBox .box_deco3,
-main .together_wrapper .contentBox .box_deco4 {
 }
 /*----- footer ------*/
 
