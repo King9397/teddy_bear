@@ -110,7 +110,7 @@ main .about .btn {
   z-index: 1;
 }
 main .about .btn:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: auto;
   border-radius: 3.125rem;
@@ -147,14 +147,15 @@ main .location {
   overflow: hidden;
 }
 main .location .txt p {
-  margin-left: 9.5rem;
+  margin: 0 0 50px 180px;
   font-family: var(--ko-font);
-  font-size: 21px;
+  font-size: var(--size-font22);
 }
 main .location .location_theme {
   justify-content: space-around;
   gap: 4.375rem;
   align-items: center;
+  margin-bottom: 30px;
 }
 main .location .location_theme .title2 {
   font-size: 86px;
@@ -174,7 +175,7 @@ main .location .location_theme .location_txt p:nth-child(2) {
   position: relative;
 }
 main .location .location_theme .location_txt p:nth-child(2):before {
-  content: '';
+  content: "";
   background-color: var(--color-pink);
   width: 5px;
   height: 33px;
@@ -186,20 +187,13 @@ main .location .location_theme .location_txt p:nth-child(2):before {
 
 /*--- swiper ---*/
 main .location .mySwiper {
-  height: 100vh;
+  height: 60vh;
   overflow: hidden;
 }
 main .location .mySwiper .swiper-wrapper {
   width: 400%;
 }
-
-/* main .mySwiper .swiper-wrapper .swiper-slide { */
-
-main .location .swiper {
-  height: 100%;
-  margin-left: 150px;
-}
-main .location .swiper .swiper-wrapper .swiper-slide {
+main .location .mySwiper .swiper-wrapper .swiper-slide {
   width: 100%;
 }
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box {
@@ -227,16 +221,27 @@ main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img3 {
 }
 main .mySwiper .swiper-wrapper .swiper-slide .swiper_box .swiper_img4 {
   background: url(./images/slide1.png) no-repeat;
-  object-fit: cover;
 }
-main .location .swiper .swiper-wrapper .swiper-slide .box_txt {
+main .location .mySwiper .swiper-wrapper .swiper-slide .swiper_txt {
   padding-top: 30px;
 }
-main .location .swiper .swiper-wrapper .swiper-slide .box_txt p:nth-child(1) {
+main
+  .location
+  .mySwiper
+  .swiper-wrapper
+  .swiper-slide
+  .swiper_txt
+  p:nth-child(1) {
   font-family: var(--ko-font);
   font-size: 33px;
 }
-main .location .swiper .swiper-wrapper .swiper-slide .box_txt p:nth-child(2) {
+main
+  .location
+  .mySwiper
+  .swiper-wrapper
+  .swiper-slide
+  .swiper_txt
+  p:nth-child(2) {
   margin-top: 15px;
   font-family: var(--ko-font);
   font-size: 21px;
@@ -299,7 +304,7 @@ main .animation .where .btn {
   z-index: 1;
 }
 main .animation .where .btn:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: auto;
   border-radius: 3.125rem;
@@ -436,7 +441,7 @@ main .schedule .btn {
   z-index: 1;
 }
 main .schedule .btn:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: auto;
   border-radius: 3.125rem;
@@ -468,7 +473,7 @@ footer .flex .btn {
 }
 
 footer .flex .btn:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: auto;
   border-radius: 3.125rem;
