@@ -132,7 +132,7 @@ main .about .btn:hover:after {
   transition: height 0.5s linear;
   height: 100%;
 }
-
+/*--- 버튼 클릭 범주 확장 "준현" ---*/
 main .about .btn p{
   display: block;
   width: 100%;
@@ -168,9 +168,12 @@ main .location .txt p {
   font-size: 21px;
 }
 main .location .location_theme {
-  justify-content: space-around;
-  gap: 4.375rem;
+  justify-content: center;
+  gap: 20px;
   align-items: center;
+}
+main .location .location_theme svg path {
+  transition: 1s;
 }
 main .location .location_theme .title2 {
   font-size: 86px;
@@ -192,7 +195,7 @@ main .location .location_theme .location_txt p:nth-child(2) {
   align-items: center;
   justify-content: flex-start;
   overflow: hidden;
-  height: 66px;
+  height: 46px;
 }
 
 main .location .location_theme .location_txt p:nth-child(2):before {
@@ -303,6 +306,7 @@ main .animation .where {
   justify-content: center;
   align-items: center;
 }
+/*--- svg 추가 "준현" ---*/
 main .animation .where svg path {
   transition: 1s;
 }
@@ -345,6 +349,7 @@ main .animation .where .btn:after {
   z-index: -1;
   top: 0;
 }
+
 main .animation .where .btn:hover {
   color: rgb(255, 255, 255);
   transition: linear 2s;
@@ -353,6 +358,7 @@ main .animation .where .btn:hover:after {
   transition: height 0.5s linear;
   height: 100%;
 }
+/*--- 버튼 클릭 범주 확장 "준현" ---*/
 main .animation .where .btn p{
   display: block;
   width: 100%;
@@ -502,7 +508,7 @@ main .schedule .btn:hover:after {
   transition: height 0.5s linear;
   height: 100%;
 }
-
+/*--- 버튼 클릭 범주 확장 "준현" ---*/
 main .schedule .btn p{
   display: block;
   width: 100%;
@@ -538,10 +544,12 @@ footer .flex .btn:after {
   z-index: -1;
   top: 0;
 }
+
 footer .flex .btn:hover {
   color: black;
   transition: linear 2s;
 }
+/*--- 버튼 클릭 범주 확장 "준현" ---*/
 footer .flex .btn:hover:after {
   transition: height 0.5s linear;
   height: 100%;
