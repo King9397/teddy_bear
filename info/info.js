@@ -14,12 +14,12 @@ const mySwiper = new Swiper(".mySwiper", {
 });
 
 // 이용안내 svg
-const arrow_left = document.querySelectorAll("charge_wrapper_txt1>svg path");
+const arrow_left = document.querySelectorAll(".charge_wrapper svg path");
 $(window).on("scroll", () => {
   arrow_left.forEach(function (a, idx) {
     let length = a.getTotalLength();
     // console.log(length);
-    if (scrollY > 3800) {
+    if (scrollY > 3900) {
       a.style.strokeDasharray = length;
       a.style.strokeDashoffset = 0;
     } else {
