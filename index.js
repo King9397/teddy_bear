@@ -26,16 +26,6 @@ const mySwiper = new Swiper(".mySwiper", {
   },
 });
 
-//  메뉴 스크롤 (지우면x)
-$(document).ready(function () {
-  $(".menu_wrapper_nav a").on("click", (e) => {
-    e.preventDefault();
-    $(".menu_wrapper_list").slideToggle();
-    $(".menu_wrapper_list").toggleClass("hide");
-    $(".menu_wrapper_box").toggleClass("color");
-  });
-});
-
 // 추가 한 부분입니다. -준현
 let arrow = document.querySelectorAll(".location_theme>svg path");
 $(window).on("scroll", () => {
@@ -57,7 +47,7 @@ $(window).on("scroll", () => {
   line.forEach(function (a, idx) {
     let length = a.getTotalLength();
     // console.log(length);
-    if (scrollY > 3000) {
+    if (scrollY > 5050) {
       a.style.strokeDasharray = length;
       a.style.strokeDashoffset = 0;
     } else {
@@ -71,7 +61,7 @@ $(window).on("scroll", () => {
   line2.forEach(function (a, idx) {
     let length = a.getTotalLength();
     // console.log(length);
-    if (scrollY > 4800) {
+    if (scrollY > 7350) {
       a.style.strokeDasharray = length;
       a.style.strokeDashoffset = 0;
     } else {
