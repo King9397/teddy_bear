@@ -16,15 +16,20 @@ window.addEventListener("load", function () {
 //세번째 섹션 자동 슬라이더
 
 const mySwiper = new Swiper(".mySwiper", {
-  spaceBetween: -250,
-  // centeredSlides: true,
+  spaceBetween: -220,
   slidesPerView: "1.8",
-  slidesOffsetBefore: 100,
+  slidesOffsetBefore: 180,
   slidesOffsetAfter: -100,
+
   pagination: {
     el: "pagination_bullet",
     // type: "bullets",
     // clickable: true,
+
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
   },
 });
 
@@ -37,6 +42,22 @@ $(document).ready(function () {
     $(".menu_wrapper_box").toggleClass("color");
   });
 });
+
+// 추가 한 부분입니다. -준현
+let arrow = document.querySelectorAll(".location_theme>svg path");
+$(window).on("scroll", () => {
+  arrow.forEach(function (a, idx) {
+    let length = a.getTotalLength();
+    // console.log(length);
+    if (scrollY > 1690) {
+      a.style.strokeDasharray = length;
+      a.style.strokeDashoffset = 0;
+    } else {
+      a.style.strokeDashoffset = length;
+    }
+  });
+});
+
 // svg
 let line = document.querySelectorAll(".where>svg path");
 $(window).on("scroll", () => {
