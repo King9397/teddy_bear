@@ -44,6 +44,9 @@ header {
 header .menu_wrapper {
   position: relative;
 }
+.menu_wrapper_nav {
+  text-align: center;
+}
 header .menu_wrapper_box {
   justify-content: space-between;
   align-items: center;
@@ -156,7 +159,7 @@ header .menu_wrapper_list .nav_ani {
   position: absolute;
   top: 120px;
   right: 400px;
-  transform: translateX(-50%)
+  transform: translateX(-50%);
 }
 
 /* footer */
