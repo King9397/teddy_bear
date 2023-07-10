@@ -18,3 +18,5 @@
 2300710      | 최종시안 제출 및 완료보고서 작성
 
 ##퍼블리싱 가이드라인##
+
+https://king9397.github.io/teddy_bear/images/PublishingGuide.pdf
