@@ -33,6 +33,12 @@ span {
   display: block;
 }
 
+
+
+
+
+
+
 /* header */
 header {
   position: sticky;
@@ -239,12 +245,115 @@ footer .site ul .btn {
   margin: 10.5px auto;
 }
 
+/*버튼 스타일 공통*/
+
+.button--nina>span{
+  display: inline;
+}
+.button--nina {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 100px;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  font-size: var(--size-font24);
+  z-index: 1;
+  padding: 0 2em;
+  background: var(--color-pink);
+  color: var(--color-gray);
+  overflow: hidden;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.button--nina.button--inverted {
+  background: var(--color-gray);
+  color: var(--color-pink);
+}
+.button--nina > span {
+  display: inline-block;
+  padding: 1em 0;
+  opacity: 0;
+  color: var(--color-pink);
+  -webkit-transform: translate3d(0, -10px, 0);
+  transform: translate3d(0, -10px, 0);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.button--nina::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1em 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.button--nina:hover {
+  background-color: var(--color-gray);
+}
+.button--nina:hover::before {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+.button--nina:hover > span {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.button--nina:hover > span:nth-child(1) {
+  -webkit-transition-delay: 0.045s;
+  transition-delay: 0.045s;
+}
+.button--nina:hover > span:nth-child(2) {
+  -webkit-transition-delay: 0.09s;
+  transition-delay: 0.09s;
+}
+.button--nina:hover > span:nth-child(3) {
+  -webkit-transition-delay: 0.135s;
+  transition-delay: 0.135s;
+}
+.button--nina:hover > span:nth-child(4) {
+  -webkit-transition-delay: 0.18s;
+  transition-delay: 0.18s;
+}
+.button--nina:hover > span:nth-child(5) {
+  -webkit-transition-delay: 0.225s;
+  transition-delay: 0.225s;
+}
+.button--nina:hover > span:nth-child(6) {
+  -webkit-transition-delay: 0.27s;
+  transition-delay: 0.27s;
+}
+.button--nina:hover > span:nth-child(7) {
+  -webkit-transition-delay: 0.315s;
+  transition-delay: 0.315s;
+}
+.button--nina:hover > span:nth-child(8) {
+  -webkit-transition-delay: 0.36s;
+  transition-delay: 0.36s;
+}
+.button--nina:hover > span:nth-child(9) {
+  -webkit-transition-delay: 0.405s;
+  transition-delay: 0.405s;
+}
+.button--nina:hover > span:nth-child(10) {
+  -webkit-transition-delay: 0.45s;
+  transition-delay: 0.45s;
+}
 /* 버튼 */
 .btn {
   background-color: var(--color-pink);
   border-radius: 3.125rem;
   width: 15.3125rem;
-  height: 6rem;
   font-family: var(--ko-font);
   font-weight: bold;
   text-align: center;
@@ -259,25 +368,4 @@ footer .flex .btn {
   overflow: hidden;
   z-index: 1;
   position: relative;
-}
-footer .flex .btn:after {
-  content: "";
-  position: absolute;
-  bottom: auto;
-  border-radius: 3.125rem;
-  background-color: var(--color-gray);
-  width: 100%;
-  left: 0;
-  height: 0;
-  transition: 0.5s;
-  z-index: -1;
-  top: 0;
-}
-footer .flex .btn:hover {
-  color: black;
-  transition: linear 2s;
-}
-footer .flex .btn:hover:after {
-  transition: height 0.5s linear;
-  height: 100%;
 }

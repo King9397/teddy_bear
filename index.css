@@ -97,53 +97,7 @@ main .about > p {
   font-size: 54px;
   line-height: 115%;
 }
-main .about .btn {
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  bottom: 100px;
-  transform: translate(-50%, -50%);
-  align-items: center;
-  justify-content: center;
-  font-size: var(--size-font24);
-  overflow: hidden;
-  z-index: 1;
-}
-main .about .btn:after {
-  content: "";
-  position: absolute;
-  bottom: auto;
-  border-radius: 3.125rem;
-  background-color: var(--color-gray);
-  width: 100%;
-  left: 0;
-  height: 0;
-  transition: 0.5s;
-  z-index: -1;
-  top: 0;
-}
-main .about .btn:hover {
-  color: black;
-  transition: linear 2s;
-}
-main .about .btn:hover:after {
-  transition: height 0.5s linear;
-  height: 100%;
-}
-/*--- 버튼 클릭 범주 확장 "준현" ---*/
-main .about .btn p {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
 
-main .about .btn p a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
 main .about .keep {
   width: 100px;
   position: absolute;
@@ -345,7 +299,6 @@ main .animation .where {
   align-items: center;
   z-index: 999;
 }
-/*--- svg 추가 "준현" ---*/
 main .animation .where svg path {
   transition: 1s;
 }
@@ -366,56 +319,20 @@ main .animation .where > p {
   opacity: 0;
   transition: 1s;
 }
-main .animation .where .btn {
-  margin-top: 77px;
-  background-color: var(--color-white);
-  color: black;
-  font-size: var(--size-font24);
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  opacity: 0;
-  transition: 1s;
-}
-main .animation .where .btn:after {
-  content: "";
+main .animation .where a{
   position: absolute;
-  bottom: auto;
-  border-radius: 3.125rem;
-  background-color: black;
-  width: 100%;
-  left: 0;
-  height: 0;
-  transition: 0.5s;
-  z-index: -1;
-  top: 0;
+  left: 43%; bottom: 1%;
+  transform: translate(-50%,-50%);
 }
-main .animation .where .btn:hover {
-  color: rgb(255, 255, 255);
-  transition: linear 2s;
+
+main .animation .where .button--nina.button--nina {
+  background: var(--color-gray);
+  color: var(--color-pink);
 }
-main .animation .where .btn:hover:after {
-  transition: height 0.5s linear;
-  height: 100%;
+main .animation .where .button--nina:hover{
+  background:var(--color-white);
 }
-/*--- 버튼 클릭 범주 확장 "준현" ---*/
-main .animation .where .btn p {
-  display: block;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: 0.3s;
-}
-main .animation .where .btn p a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-/*--c: 연정 gif 추가 --*/
+
 main .animation .where .where-ani {
   width: 1200px;
   height: 400px;
@@ -526,94 +443,14 @@ main .schedule .wrapper .img_box p:nth-child(2) {
   font-family: var(--ko-font);
   font-size: 21px;
 }
-main .schedule .btn {
-  margin: 153px auto;
+main .schedule .button--nina {
+  margin-top: 240px;
   text-align: center;
   display: flex;
   justify-content: center;
   position: relative;
 }
-main .schedule .btn {
-  overflow: hidden;
-  z-index: 1;
-}
-main .schedule .btn:after {
-  content: "";
-  position: absolute;
-  bottom: auto;
-  border-radius: 3.125rem;
-  background-color: var(--color-gray);
-  width: 100%;
-  left: 0;
-  height: 0;
-  transition: 0.5s;
-  z-index: -1;
-  top: 0;
-}
-main .schedule .btn:hover {
-  color: black;
-  transition: linear 2s;
-}
-main .schedule .btn:hover:after {
-  transition: height 0.5s linear;
-  height: 100%;
-}
-/*--- 버튼 클릭 범주 확장 "준현" ---*/
-main .schedule .btn p {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-main .schedule .btn a {
-  font-family: var(--ko-font);
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+.jump{
+  margin-right: 5px;
 }
 /*----- footer ------*/
-footer .flex .btn {
-  overflow: hidden;
-  z-index: 1;
-  position: relative;
-}
-
-footer .flex .btn:after {
-  content: "";
-  position: absolute;
-  bottom: auto;
-  border-radius: 3.125rem;
-  background-color: var(--color-gray);
-  width: 100%;
-  left: 0;
-  height: 0;
-  transition: 0.5s;
-  z-index: -1;
-  top: 0;
-}
-
-footer .flex .btn:hover {
-  color: black;
-  transition: linear 2s;
-}
-/*--- 버튼 클릭 범주 확장 "준현" ---*/
-footer .flex .btn:hover:after {
-  transition: height 0.5s linear;
-  height: 100%;
-}
-footer .flex .btn p {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-footer .flex .btn p a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
