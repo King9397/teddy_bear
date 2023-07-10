@@ -46,6 +46,9 @@ header {
   height: 120px;
   top: 0;
   z-index: 99999;
+  font-size: 3.125rem;
+  transition: 0.3s;
+  align-items: center;
 }
 header .menu_wrapper {
   position: relative;
@@ -65,7 +68,7 @@ header .menu_wrapper_box {
 header .menu_wrapper_list {
   display: none;
   width: 100%;
-  height: 820px;
+  height: 1200px;
   background-color: var(--color-pink);
   position: absolute;
   top: -120px;
@@ -153,7 +156,6 @@ header .menu_wrapper_list li:hover:nth-child(3) svg:last-of-type path {
 header h1,
 .menu_wrapper_nav {
   font-family: var(--ko-font);
-  font-size: 3.125rem;
   font-weight: bold;
   line-height: normal;
   letter-spacing: -5px;
@@ -173,7 +175,7 @@ footer {
   padding: 0 10%;
   margin-top: 370px;
   font-family: var(--ko-font);
-  font-size: 21px;
+  font-size: var(--size-font21);
 }
 footer .gnb {
   align-items: flex-start;
@@ -187,16 +189,15 @@ footer .gnb .company li:nth-child(1) {
 footer .gnb .company li:nth-child(2) {
   margin-top: 69px;
   font-family: var(--ko-font);
-  font-size: 24px;
+  font-size: var(--size-font24);
   font-weight: bold;
 }
 footer .gnb .gnb_box .subhead {
-  font-size: 24px;
+  font-size: var(--size-font24);
 }
 footer .gnb li {
   padding: 16px 0;
   font-family: var(--ko-font);
-  font-size: 21px;
 }
 footer .site {
   margin-top: 150px;
@@ -207,7 +208,8 @@ footer .site ul {
   align-items: center;
 }
 footer .site ul .btn {
-  width: 17rem;
+  width: 10rem;
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,7 +239,7 @@ footer .site ul .btn {
   text-align: center;
 }
 .deco::after {
-  content: "";
+  content: '';
   display: block;
   width: 2px;
   height: 48px;
@@ -369,3 +371,7 @@ footer .flex .btn {
   z-index: 1;
   position: relative;
 }
+.jump{
+  margin-right: 5px;
+}
+
