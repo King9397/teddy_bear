@@ -62,7 +62,7 @@
   position: relative;
 }
 .mini1::before {
-  content: "";
+  content: '';
   display: block;
   width: 5px;
   height: 30px;
@@ -154,7 +154,7 @@
 
 .charge_wrapper .charge_wrapper_title {
   font-family: var(--ko-font);
-  font-size: var(--size-font96);
+  font-size: var(--size-font90);
 }
 .charge_wrapper svg {
   position: absolute;
