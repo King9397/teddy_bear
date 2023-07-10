@@ -20,5 +20,4 @@
 
 ##퍼블리싱 가이드라인##
 
-https://king9397.github.io/teddy_bear/images/PublishingGuide.pdf
-
+![picture alt](./images/PublishingGuide.pdf "PublishingGuide")
