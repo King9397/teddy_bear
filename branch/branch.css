@@ -221,9 +221,12 @@ main .together_wrapper .contentBox .info_button {
   cursor: pointer;
   transition: 1s;
 }
-main .together_wrapper .contentBox .info_button:hover {
-  background-color: #000;
-  color: white;
+main .together_wrapper .contentBox .button--nina.button--nina {
+  background: var(--color-gray);
+  color: var(--color-pink);
+}
+main .together_wrapper .contentBox .button--nina:hover{
+  background:var(--color-white);
 }
 main .together_wrapper .contentBox > svg {
   position: absolute;
