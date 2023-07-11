@@ -254,7 +254,7 @@ footer .site ul .btn {
   transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
-  font-size: var(--size-font24);
+  font-size: var(--size-font21);
   z-index: 1;
   padding: 0 2em;
   background: var(--color-pink);
@@ -367,4 +367,11 @@ footer .flex .btn {
 }
 .jump {
   margin-right: 5px;
+}
+
+.site .flex .button--nina {
+  position: relative;
+  
+  bottom: -20px;
+  
 }
