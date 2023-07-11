@@ -33,12 +33,6 @@ span {
   display: block;
 }
 
-
-
-
-
-
-
 /* header */
 header {
   position: sticky;
@@ -249,7 +243,7 @@ footer .site ul .btn {
 
 /*버튼 스타일 공통*/
 
-.button--nina>span{
+.button--nina > span {
   display: inline;
 }
 .button--nina {
@@ -371,7 +365,6 @@ footer .flex .btn {
   z-index: 1;
   position: relative;
 }
-.jump{
+.jump {
   margin-right: 5px;
 }
-
